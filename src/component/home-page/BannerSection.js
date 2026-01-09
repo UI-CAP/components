@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import data from "../data/data.json";
+import data from "@/data/data.json";
 
 export default function BannerSection({
   name = data.banner.title,

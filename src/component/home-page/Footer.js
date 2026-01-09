@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaYoutube, FaLinkedin } from 'react-icons/fa';
 import { ArrowRight } from 'lucide-react';
-import data from '../data/data.json';
+import data from "@/data/data.json";
 
 const Footer = () => {
   const [email, setEmail] = useState('');

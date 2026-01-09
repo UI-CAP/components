@@ -5,7 +5,7 @@ import Image from 'next/image';
 // Replaced reusable Button component with an inline button to avoid dependency
 import { ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import data from '../data/data.json';
+import data from "@/data/data.json";
 
 const AITransformation = () => {
     const [activeTab, setActiveTab] = useState(data.aiTransformation.tabs[0]);

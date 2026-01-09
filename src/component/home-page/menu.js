@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import data from '../data/data.json';
+import data from "@/data/data.json";
 import { AnimatePresence } from 'framer-motion';
 
 const MenuBar = () => {

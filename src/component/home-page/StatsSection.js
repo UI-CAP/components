@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { BsArrowUpRight, BsDownload } from 'react-icons/bs';
-import data from '../data/data.json';
+import data from "@/data/data.json";
 
 const StatsSection = () => {
     const stats = data.stats.items;

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import data from '../data/data.json';
+import data from "@/data/data.json";
 
 const TestimonialsSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { BsArrowUpRight } from 'react-icons/bs';
 import { BsDownload } from 'react-icons/bs';
-import data from '../data/data.json';
+import data from "@/data/data.json";
 
 // Utility to check if asset is video
 const isVideo = (src) => src && src.match(/\.mp4$/);
