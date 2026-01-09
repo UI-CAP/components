@@ -1,0 +1,686 @@
+{
+    "menu": {
+        "items": [
+            {
+                "label": "Products & Solutions",
+                "hasDropdown": true
+            },
+            {
+                "label": "Industries",
+                "hasDropdown": true
+            },
+            {
+                "label": "Company",
+                "hasDropdown": true
+            },
+            {
+                "label": "Resources",
+                "hasDropdown": true
+            },
+            {
+                "label": "Demo Hub",
+                "hasDropdown": true
+            }
+        ],
+        "megaMenu": {
+            "Products & Solutions": {
+                "leftSection": {
+                    "title": "Products & Solutions",
+                    "items": [
+                        {
+                            "title": "Product Details Page",
+                            "description": "Empower employees to instantly find policies, documents, and data across intranets, crms, and file systems",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Our Tech Stack",
+                            "description": "Exploration of the cutting-edge technologies that power our intelligent AI solutions and infrastructure.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Product Details Page",
+                            "description": "Empower employees to instantly find policies, documents, and data across intranets, crms, and file systems",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Our Tech Stack",
+                            "description": "Exploration of the cutting-edge technologies that power our intelligent AI solutions and infrastructure.",
+                            "icon": "compass"
+                        }
+                    ],
+                    "socials": [
+                        {
+                            "platform": "youtube",
+                            "url": "#",
+                            "icon": "/assets/icon/youtube.svg"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "url": "#",
+                            "icon": "/assets/icon/linkedin.svg"
+                        }
+                    ]
+                },
+                "banner": {
+                    "title": "Start your Agentic AI journey with Vishleshan.ai today.",
+                    "description": "Get on a quick call with our experts",
+                    "ctaText": "Try A Free Demo",
+                    "image": "/assets/image/robot.jpg"
+                },
+                "rightSection": {
+                    "title": "Related Blogs",
+                    "items": [
+                        {
+                            "title": "AI Solutions Built for Real Business Impact—At Scale",
+                            "image": "/assets/image/menu1.png",
+                            "tag": "Event"
+                        },
+                        {
+                            "title": "AI-Powered Copilot for Modern Drivers, Everywhere",
+                            "image": "/assets/image/menu2.png",
+                            "tag": "News"
+                        },
+                        {
+                            "title": "Geo-Social Platform for Drivers Everywhere",
+                            "image": "/assets/image/menu3.png",
+                            "tag": "Case Study"
+                        }
+                    ]
+                }
+            },
+            "Industries": {
+                "leftSection": {
+                    "title": "Focused Industries",
+                    "items": [
+                        {
+                            "title": "Financial Services",
+                            "description": "Transform banking and finance with AI-driven risk assessment and customer personalization.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Healthcare AI",
+                            "description": "Accelerate diagnostics and patient care with secure, compliant AI implementations.",
+                            "icon": "compass"
+                        }
+                    ],
+                    "socials": [
+                        {
+                            "platform": "youtube",
+                            "url": "#",
+                            "icon": "/assets/icon/youtube.svg"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "url": "#",
+                            "icon": "/assets/icon/linkedin.svg"
+                        }
+                    ]
+                },
+                "banner": {
+                    "title": "Start your Agentic AI journey with Vishleshan.ai today.",
+                    "description": "Get on a quick call with our experts",
+                    "ctaText": "Try A Free Demo",
+                    "image": "/assets/image/robot.jpg"
+                },
+                "rightSection": {
+                    "title": "Industry Trends",
+                    "items": [
+                        {
+                            "title": "The Digital Renaissance of Finance",
+                            "image": "/assets/image/menu1.png",
+                            "tag": "Whitepaper"
+                        },
+                        {
+                            "title": "AI in Modern Surgery",
+                            "image": "/assets/image/menu2.png",
+                            "tag": "News"
+                        }
+                    ]
+                }
+            },
+            "Company": {
+                "leftSection": {
+                    "title": "About Us",
+                    "items": [
+                        {
+                            "title": "Our Story",
+                            "description": "Learn about our journey in transforming businesses through innovative AI solutions.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Leadership Team",
+                            "description": "Meet the experts driving AI innovation and business transformation.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Careers",
+                            "description": "Join our team and help shape the future of enterprise AI solutions.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Contact Us",
+                            "description": "Get in touch with our team to discuss your AI transformation needs.",
+                            "icon": "compass"
+                        }
+                    ],
+                    "socials": [
+                        {
+                            "platform": "youtube",
+                            "url": "#",
+                            "icon": "/assets/icon/youtube.svg"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "url": "#",
+                            "icon": "/assets/icon/linkedin.svg"
+                        }
+                    ]
+                },
+                "banner": {
+                    "title": "Join the AI Revolution with Vishleshan.ai",
+                    "description": "Discover how we're transforming enterprises",
+                    "ctaText": "Learn More",
+                    "image": "/assets/image/robot.jpg"
+                },
+                "rightSection": {
+                    "title": "Company News",
+                    "items": [
+                        {
+                            "title": "Vishleshan.ai Expands Global Operations",
+                            "image": "/assets/image/menu1.png",
+                            "tag": "Press Release"
+                        },
+                        {
+                            "title": "Award-Winning AI Innovation Team",
+                            "image": "/assets/image/menu2.png",
+                            "tag": "Achievement"
+                        },
+                        {
+                            "title": "New Leadership Appointments Announced",
+                            "image": "/assets/image/menu3.png",
+                            "tag": "News"
+                        }
+                    ]
+                }
+            },
+            "Resources": {
+                "leftSection": {
+                    "title": "Knowledge Center",
+                    "items": [
+                        {
+                            "title": "Blog",
+                            "description": "Expert insights and thought leadership on AI, machine learning, and digital transformation.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Case Studies",
+                            "description": "Real-world success stories showcasing AI implementations and measurable business impact.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Whitepapers",
+                            "description": "In-depth research and analysis on emerging AI trends and enterprise solutions.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Documentation",
+                            "description": "Comprehensive guides and technical documentation for our AI platform and solutions.",
+                            "icon": "compass"
+                        }
+                    ],
+                    "socials": [
+                        {
+                            "platform": "youtube",
+                            "url": "#",
+                            "icon": "/assets/icon/youtube.svg"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "url": "#",
+                            "icon": "/assets/icon/linkedin.svg"
+                        }
+                    ]
+                },
+                "banner": {
+                    "title": "Access Expert AI Resources & Insights",
+                    "description": "Download our latest whitepapers and guides",
+                    "ctaText": "Explore Resources",
+                    "image": "/assets/image/robot.jpg"
+                },
+                "rightSection": {
+                    "title": "Popular Resources",
+                    "items": [
+                        {
+                            "title": "Complete Guide to Enterprise AI Implementation",
+                            "image": "/assets/image/menu1.png",
+                            "tag": "Guide"
+                        },
+                        {
+                            "title": "ROI Calculator: Measure AI Impact",
+                            "image": "/assets/image/menu2.png",
+                            "tag": "Tool"
+                        },
+                        {
+                            "title": "2026 AI Trends Report",
+                            "image": "/assets/image/menu3.png",
+                            "tag": "Report"
+                        }
+                    ]
+                }
+            },
+            "Demo Hub": {
+                "leftSection": {
+                    "title": "Experience Our Solutions",
+                    "items": [
+                        {
+                            "title": "Interactive Demo",
+                            "description": "Experience our AI solutions in action with live, interactive demonstrations.",
+                            "icon": "compass"
+                        },
+                        {
+                            "title": "Video Tutorials",
+                            "description": "Watch step-by-step guides showcasing key features and implementation strategies.",
+                            "icon": "compass"
+                        }
+                    ],
+                    "socials": [
+                        {
+                            "platform": "youtube",
+                            "url": "#",
+                            "icon": "/assets/icon/youtube.svg"
+                        },
+                        {
+                            "platform": "linkedin",
+                            "url": "#",
+                            "icon": "/assets/icon/linkedin.svg"
+                        }
+                    ]
+                },
+                "banner": {
+                    "title": "See Our AI Solutions in Action",
+                    "description": "Schedule a personalized demo today",
+                    "ctaText": "Book a Demo",
+                    "image": "/assets/image/robot.jpg"
+                },
+                "rightSection": {
+                    "title": "Featured Demos",
+                    "items": [
+                        {
+                            "title": "AI-Powered Customer Service Platform Demo",
+                            "image": "/assets/image/menu1.png",
+                            "tag": "Demo"
+                        },
+                        {
+                            "title": "Real-Time Analytics Dashboard Walkthrough",
+                            "image": "/assets/image/menu2.png",
+                            "tag": "Video"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "banner": {
+        "title": "Let's AI Your Business",
+        "subtitle": "We build enterprise-grade AI solutions that make intelligence usable, scalable, and business-ready.",
+        "images": [
+            "/assets/video/banner.mp4",
+            "/assets/video/banner1.mp4",
+            "/assets/video/banner2.jpg"
+        ],
+        "partners": {
+            "title": "Trusted AI Partner To Leading Enterprises",
+            "items": [
+                {
+                    "name": "BAJAJ FINSERV",
+                    "image": "/assets/partners/bajaj.png"
+                },
+                {
+                    "name": "Dixon",
+                    "image": "/assets/partners/dixon.png"
+                },
+                {
+                    "name": "HAVELLS",
+                    "image": "/assets/partners/havels.png"
+                },
+                {
+                    "name": "LeasePlan",
+                    "image": "/assets/partners/leaseryt.png"
+                },
+                {
+                    "name": "LUMINOUS",
+                    "image": "/assets/partners/luminous.png"
+                },
+                {
+                    "name": "OLA MONEY",
+                    "image": "/assets/partners/ola.png"
+                },
+                {
+                    "name": "POLYCAB",
+                    "image": "/assets/partners/polycab.png"
+                },
+                {
+                    "name": "Signify",
+                    "image": "/assets/partners/signify.png"
+                },
+                {
+                    "name": "TATA CAPITAL",
+                    "image": "/assets/partners/tata.png"
+                }
+            ]
+        }
+    },
+    "vishleshanWay": {
+        "subtitle": "The Vishleshan Way",
+        "title": "Analysis. Synthesis. Intelligence.",
+        "description": "True to our name, Vishleshan means the process of breaking down complexity to uncover insights and create intelligent solutions. It defines how we think, build, and deliver. We design and develop enterprise-grade AI solutions that drive real business outcomes.",
+        "items": [
+            {
+                "name": "Up To",
+                "value": "2x",
+                "description": "Engagement"
+            },
+            {
+                "name": "Up To",
+                "value": "5x",
+                "description": "CTR"
+            },
+            {
+                "name": "Up To",
+                "value": "+40%",
+                "description": "CTR"
+            }
+        ]
+    },
+    "aiTransformation": {
+        "title": "AI-Powered Business Transformation",
+        "tabs": [
+            "Smart Search And Discovery",
+            "Conversational",
+            "Agentic",
+            "Industrial AI"
+        ],
+        "content": {
+            "Smart Search And Discovery": {
+                "title": "Smart Search and Discovery",
+                "description": "Easily customize and deploy AI solutions tailored to automate, optimize, and adapt to any task or business workflow.",
+                "image": "/assets/video/AI-powred.mp4"
+            },
+            "Conversational": {
+                "title": "Conversational AI",
+                "description": "Build intelligent chatbots and virtual assistants that engage in natural, human-like conversations to enhance customer support and internal workflows.",
+                "image": "/assets/video/AI-powred.mp4"
+            },
+            "Agentic": {
+                "title": "Agentic Workflows",
+                "description": "Implement autonomous AI agents that can plan, execute, and refine complex tasks across multiple systems with minimal human intervention.",
+                "image": "/assets/video/AI-powred.mp4"
+            },
+            "Industrial AI": {
+                "title": "Industrial AI Solutions",
+                "description": "Deploy specialized AI models designed for high-stakes industrial environments, predictive maintenance, and operational optimization.",
+                "image": "/assets/video/AI-powred.mp4"
+            }
+        }
+    },
+    "stats": {
+        "title": "No AI Hype Here.<br />Just Results.",
+        "description": "Vishleshan provides an end-to-end AI platform for enterprises. From DataFlow to Aether, we offer a toolchain that enables businesses to build and deploy AI solutions across industries.",
+        "image": "/assets/image/stats.png",
+        "items": [
+            {
+                "value": "500+",
+                "description": "Lorem Ipsum"
+            },
+            {
+                "value": "2.2k",
+                "description": "Lorem Ipsum"
+            },
+            {
+                "value": "934k",
+                "description": "Task Automated"
+            },
+            {
+                "value": "15.5k",
+                "description": "Lorem Ipsum"
+            }
+        ]
+    },
+    "footer": {
+        "image": "/assets/logo/white.png",
+        "video": "/assets/video/footer.mp4",
+        "description": "Vishleshan' in Sanskrit means analysis and synthesis, involving the examination and breakdown of something to understand its components.",
+        "links": {
+            "company": [
+                {
+                    "label": "About Us",
+                    "href": "#"
+                },
+                {
+                    "label": "Privacy",
+                    "href": "#"
+                }
+            ],
+            "investmentStrategies": [
+                {
+                    "label": "Product",
+                    "href": "#"
+                },
+                {
+                    "label": "Blog",
+                    "href": "#"
+                },
+                {
+                    "label": "Enterprise",
+                    "href": "#"
+                }
+            ],
+            "resources": [
+                {
+                    "label": "Financial",
+                    "href": "#"
+                },
+                {
+                    "label": "Healthcare",
+                    "href": "#"
+                },
+                {
+                    "label": "Enterprise",
+                    "href": "#"
+                },
+                {
+                    "label": "Cloud + Tech AI",
+                    "href": "#"
+                }
+            ],
+            "platform": [
+                {
+                    "label": "Contacts",
+                    "href": "#"
+                },
+                {
+                    "label": "Login / Registration",
+                    "href": "#"
+                }
+            ]
+        },
+        "copyright": "©2025 Vishleshan.ai • All rights reserved.",
+        "disclaimer": {
+            "important": "This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Past performance is not indicative of future results. Investment and other forward-looking statements are subject to risks and uncertainties. Please refer to our Form ADV Part 2 brochure and other regulatory filings available upon request.",
+            "additional": "For more information about our investment strategies, fees, and risks, please refer to our Form ADV Part 2 brochure and other regulatory filings available upon request."
+        }
+    },
+    "useCases": {
+        "title": "Use Cases",
+        "description": "From startups to enterprises, see practical wins and measurable outcomes across sectors",
+        "image": "/assets/image/UseCases.png",
+        "items": [
+            "Research leads",
+            "Implement IT Support",
+            "Support Sales Reps",
+            "Simplify Concepts",
+            "Uncover Sales Leads",
+            "Help Customers",
+            "Generate Posts",
+            "Help Customers",
+            "Simplify Concepts",
+            "Help Customers",
+            "Uncover Sales Leads",
+            "Research leads",
+            "Implement IT Support"
+        ]
+    },
+    "testimonials": {
+        "title": "Hear It From Our Customers & Partners",
+        "description": "Discover real experiences from clients who have benefited from our services and expertise.",
+        "items": [
+                        {
+                "id": 1,
+                "name": "Peter, Belgium",
+                "subtitle": "CEO - Shamya",
+                "description": "Explore authentic stories from clients who have transformed their journeys with our services. Check out genuine reviews highlighting the success and impact our solutions have had on their lives.",
+                "image": ""
+            },
+            {
+                "id": 2,
+                "name": "Peter, Belgium",
+                "subtitle": "CEO - Quin",
+                "description": "Explore authentic stories from clients who have transformed their journeys with our services. Check out genuine reviews highlighting the success and impact our solutions have had on their lives.",
+                "image": "/assets/image/redGirl.png"
+            },
+            {
+                "id": 3,
+                "name": "Peter, Belgium",
+                "subtitle": "CEO - John Doe",
+                "description": "Explore authentic stories from clients who have transformed their journeys with our services. Check out genuine reviews highlighting the success and impact our solutions have had on their lives.",
+                "image": "/assets/image/grayGirl.png"
+            },
+            {
+                "id": 4,
+                "name": "Peter, Belgium",
+                "subtitle": "CEO - Shamya",
+                "description": "Explore authentic stories from clients who have transformed their journeys with our services. Check out genuine reviews highlighting the success and impact our solutions have had on their lives.",
+                "image": ""
+            },
+            {
+                "id": 5,
+                "name": "Peter, Belgium",
+                "subtitle": "CEO - John Doe",
+                "description": "Explore authentic stories from clients who have transformed their journeys with our services. Check out genuine reviews highlighting the success and impact our solutions have had on their lives.",
+                "image": "/assets/image/grayGirl.png"
+            }
+        ]
+    },
+    "successStories": {
+        "title": "Success Stories",
+        "description": "A Collection Of Inspiring Journeys Where Vision, Hard Work, And Resilience Led To Remarkable Success.",
+        "backgroundMedia": "/assets/image/successBg.png",
+        "items": [
+            {
+                "id": 1,
+                "subtitle": "July 29th, 2025",
+                "title": "Geo-Social Platform For Drivers",
+                "image": "/assets/image/banner2.jpg",
+                "link": "#"
+            },
+            {
+                "id": 2,
+                "subtitle": "July 29th, 2025",
+                "title": "How VIPdesk Achieved Over 70% Automation While Preserving The Human Touch, Automation While Preserving.",
+                "link": "#"
+            },
+            {
+                "id": 3,
+                "subtitle": "July 29th, 2025",
+                "title": "How VIPdesk Achieved Over 70% Automation While Preserving The Human Touch.",
+                "link": "#"
+            },
+            {
+                "id": 4,
+                "subtitle": "July 29th, 2025",
+                "title": "Geo-Social Platform For Drivers",
+                "image": "/assets/video/banner2.jpg",
+                "link": "#"
+            }
+        ]
+    },
+    "insights": {
+        "subtitle": "The Vishleshan View",
+        "title": "Insights And Stories From Our World Of AI",
+        "categories": [
+            "All",
+            "Blogs",
+            "News",
+            "Events",
+            "Case Study"
+        ],
+        "items": [
+            {
+                "id": 1,
+                "category": "Blog",
+                "title": "Geo-Social Platform for Drivers Everywhere",
+                "description": "By being simple yet precise, the title avoids unnecessary jargon and makes it easy.",
+                "image": "/assets/image/menu3.png",
+                "link": "#"
+            },
+            {
+                "id": 2,
+                "category": "Event",
+                "title": "AI Solutions Built for Real Business Impact—At Scale",
+                "description": "It's straightforward interface means users quickly grasp the product's main functions.",
+                "image": "/assets/image/menu1.png",
+                "link": "#"
+            },
+            {
+                "id": 3,
+                "category": "News",
+                "title": "AI-Powered Copilot for Modern Drivers, Everywhere",
+                "description": "It's intuitive design ensures users quickly understand the product's core benefits.",
+                "image": "/assets/image/menu2.png",
+                "link": "#"
+            },
+            {
+                "id": 4,
+                "category": "Case Study",
+                "title": "Geo-Social Platform for Drivers Everywhere",
+                "description": "Its simple design helps drivers quickly grasp the product's key features.",
+                "image": "/assets/image/menu4.png",
+                "link": "#"
+            },
+            {
+                "id": 5,
+                "category": "Blog",
+                "title": "Understanding AI in Modern Transportation",
+                "description": "By being simple yet precise, the title avoids unnecessary jargon and makes it easy.",
+                "image": "/assets/video/banner2.jpg",
+                "link": "#"
+            },
+            {
+                "id": 6,
+                "category": "News",
+                "title": "Latest Trends in AI Technology",
+                "description": "It's intuitive design ensures users quickly understand the product's core benefits.",
+                "image": "/assets/video/banner2.jpg",
+                "link": "#"
+            }
+        ]
+    },
+    "agenticCta": {
+        "title": "Start your Agentic AI journey with Vishleshan.ai today.",
+        "description": "Get on a quick call with our experts",
+        "image": "",
+        "secondaryImage": "/assets/image/robot.jpg",
+        "cta": [
+            {
+                "title": "Try A Free Demo",
+                "variant": "primary",
+                "link": "#"
+            },
+            {
+                "title": "Talk To Sales",
+                "variant": "outline",
+                "link": "#"
+            }
+        ]
+    }
+}
