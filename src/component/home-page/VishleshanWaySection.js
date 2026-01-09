@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import data from "@/data/data.json";
+import data from "@/data/home-page/data.json";
 
 const VishleshanWaySection = () => {
     const vData = data.vishleshanWay;

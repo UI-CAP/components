@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
-import data from "@/data/data.json";
+import data from "@/data/home-page/data.json";
 
 const UseCasesSection = () => {
     const useCasesData = data.useCases;

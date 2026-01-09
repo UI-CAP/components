@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 // Removed framer-motion for simplicity
 import { ArrowRight } from 'lucide-react';
-import data from "@/data/data.json";
+import data from "@/data/home-page/data.json";
 
 const InsightsSection = () => {
     const [activeFilter, setActiveFilter] = useState('All');
