@@ -1,14 +1,16 @@
 import MenuBar from "@/component/home-page/menu";
 import Footer from "@/component/home-page/Footer";
+import WhyChooseSection from "@/component/industry-page/WhyChooseSection";
+import SolutionSection from "@/component/industry-page/SolutionSection";
+import BannerSection from "@/component/home-page/BannerSection";
 
 const IndustryPage = () => {
   return (
     <div className="bg-white min-h-screen">
       <MenuBar />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-8">Industry Page</h1>
-        {/* Add your industry page components here */}
-      </div>
+      <BannerSection/>
+      <WhyChooseSection />
+      <SolutionSection />
       <Footer />
     </div>
   );
