@@ -1,0 +1,129 @@
+{
+    "whyChoose": {
+        "title": "Why Choose Us?",
+        "description": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam.",
+        "backgroundImage": "/assets/image/whychoose1.jpg",
+        "cards": [
+            {
+                "id": 1,
+                "label": "information",
+                "title": "Less Stock Outs",
+                "value": "20%"
+            },
+            {
+                "id": 2,
+                "label": "information",
+                "title": "More Sales",
+                "value": "10%"
+            },
+            {
+                "id": 3,
+                "label": "information",
+                "title": "More Customer Satisfaction",
+                "value": "60%"
+            },
+            {
+                "id": 4,
+                "label": "information",
+                "title": "Industry Specific Solutions",
+                "value": "35+"
+            }
+        ]
+    },
+    "solution": {
+        "title": "Our Solution",
+        "subtitle": "Unlock advanced, contextual search capabilities for your enterprise",
+        "image": "/assets/image/solution-city.png",
+        "imageAlt": "City lights visualization representing advanced search solutions",
+        "solutions": [
+            {
+                "id": 1,
+                "number": "01.",
+                "title": "Semantic And Natural Language Search",
+                "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                "details": [
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI. It first retrieves relevant information from a knowledge base, then uses an LLM to generate an answer based on that information."
+                    },
+                    {
+                        "heading": "Conversational AI:",
+                        "text": "Powers chatbots and virtual assistants that can respond to natural language questions in a conversational manner. Instead of a list of links, the user gets a synthesized answer."
+                    },
+                    {
+                        "heading": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                        "text": ""
+                    },
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "number": "02.",
+                "title": "Personalized And Contextual Search",
+                "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                "details": [
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI. It first retrieves relevant information from a knowledge base, then uses an LLM to generate an answer based on that information."
+                    },
+                    {
+                        "heading": "Conversational AI:",
+                        "text": "Powers chatbots and virtual assistants that can respond to natural language questions in a conversational manner."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "number": "03.",
+                "title": "Multimodal Search",
+                "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                "details": [
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI. It first retrieves relevant information from a knowledge base."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "number": "04.",
+                "title": "Generative AI Search And Discovery",
+                "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                "details": [
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI. It first retrieves relevant information from a knowledge base, then uses an LLM to generate an answer based on that information."
+                    },
+                    {
+                        "heading": "Conversational AI:",
+                        "text": "Powers chatbots and virtual assistants that can respond to natural language questions in a conversational manner. Instead of a list of links, the user gets a synthesized answer."
+                    },
+                    {
+                        "heading": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                        "text": ""
+                    },
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI."
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "number": "05.",
+                "title": "Hybrid Search",
+                "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                "details": [
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI."
+                    }
+                ]
+            }
+        ]
+    }
+}
