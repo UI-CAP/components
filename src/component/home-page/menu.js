@@ -39,18 +39,15 @@ const MenuBar = () => {
     }, 150);
   };
 
-  return (
+    return (
     <header
       ref={headerRef}
       onMouseLeave={handleMouseLeave}
-      className={`fixed left-0 right-0 z-50 transition-all duration-300 shadow-md flex items-center justify-between px-[3%] lg:px-[7%] py-3 ${isScrolled
-        ? 'top-5 mx-[2%] md:mx-[4%] lg:mx-[6%] rounded-full border border-gray-200/50 bg-white/90 backdrop-blur-sm'
-        : 'top-0 rounded-none border-b border-gray-100 bg-white'
-        }`}
-    >
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 shadow-md flex items-center justify-between ${isScrolled ? 'px-[1%] lg:px-[3%] py-4 top-5 mx-[2%] md:mx-[4%] lg:mx-[6%] rounded-full border border-gray-200/50 bg-white/90 backdrop-blur-sm' : 'px-[3%] lg:px-[7%] py-4 top-0 rounded-none border-b border-gray-100 bg-white'}`}>
+    
       {/* Left: Logo */}
       <div className="flex items-center gap-2">
-        <img src="/assets/logo/menu.png" alt="Vishleshan Logo" className="h-10 object-contain" />
+        <img src="/assets/logo/menu.png" alt="Vishleshan Logo" className="h-12 object-contain" />
       </div>
 
       {/* Center: Menu */}
@@ -132,7 +129,7 @@ const MenuBar = () => {
 
                     {/* Left Section: Pages Grid */}
                     <div className="flex flex-col rounded-4xl h-full bg-[#D9D9D933]" style={{ width: leftSectionWidth }}>
-                      <h5 className="mb-4 p-8 font-bold">{activeMenu}</h5>
+                      <h6 className="mb-4 p-8 font-bold">{activeMenu}</h6>
                       <div 
                         className={`${isColumnLayout ? 'flex flex-col' : 'grid grid-cols-[1fr_1px_1fr]'} my-18 px-6 ${needsScroll ? 'overflow-y-auto' : ''}`}
                       >
@@ -142,12 +139,12 @@ const MenuBar = () => {
                               <div className="flex px-3 items-start">
                                 <div className="flex flex-col py-6 flex-1">
                                   <div className="flex gap-2 items-center">
-                                    <h5 className="font-bold text-black group-hover:text-[#F22E62] transition-colors">{item.title}</h5>
+                                    <h6 className="font-bold text-black group-hover:text-[#F22E62] transition-colors">{item.title}</h6>
                                     <ArrowRight size={16} className="text-gray-400 group-hover:translate-x-1 group-hover:text-[#F22E62] transition-all" />
                                   </div>
-                                  <h6 className="text-gray-500 leading-relaxed">
+                                  <h7 className="text-gray-500 leading-relaxed">
                                     {item.description}
-                                  </h6>
+                                  </h7>
                                 </div>
                               </div>
                             </div>
@@ -217,7 +214,7 @@ const MenuBar = () => {
 
                     {/* Right Section: Blogs */}
                     <div className="flex flex-col bg-[#02006D1F] p-8 rounded-4xl h-full flex-1">
-                      <h5 className="mb-6 font-bold">{rightSection.title}</h5>
+                      <h6 className="mb-6 font-bold">{rightSection.title}</h6>
                       <div className="flex flex-col overflow-hidden overflow-y-auto gap-4 scrollbar-hide">
                         {rightSection.items.map((blog, idx) => (
                           <div
@@ -236,9 +233,9 @@ const MenuBar = () => {
                               <span className="inline-block bg-white px-3 py-1 rounded-full text-black font-medium mb-2 w-fit">
                                 {blog.tag}
                               </span>
-                              <h6 className="font-semibold text-black mb-2 line-clamp-2">
+                              <h7 className="font-semibold text-black mb-2 line-clamp-2">
                                 {blog.title}
-                              </h6>
+                              </h7>
                               <span className="text-black font-semibold underline hover:text-[#F22E62] transition-colors">
                                 Read More
                               </span>

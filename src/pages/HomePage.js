@@ -9,23 +9,25 @@ import TestimonialsSection from "@/component/home-page/TestimonialsSection";
 import SuccessStoriesSection from "@/component/home-page/SuccessStoriesSection";
 import InsightsSection from "@/component/home-page/InsightsSection";
 import AgenticCtaSection from "@/component/home-page/AgenticCtaSection";
+import SmartDiscoverySection from "@/component/product-page/SmartDiscoverySection";
 
 const HomePage = () => {
-    return (
-        <div className="bg-white min-h-screen">
-            <MenuBar />
-            <BannerSection />
-            <VishleshanWaySection />
-            <AITransformation />
-            <StatsSection />
-            <UseCasesSection />
-            <TestimonialsSection />
-            <SuccessStoriesSection />
-            <InsightsSection />
-            <AgenticCtaSection/>
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="bg-white min-h-screen">
+      <MenuBar />
+      <BannerSection />
+      <VishleshanWaySection />
+      <AITransformation />
+      <StatsSection />
+      <UseCasesSection />
+      <TestimonialsSection />
+      <SuccessStoriesSection />
+      <InsightsSection />
+      <AgenticCtaSection />
+      <Footer />
+      <SmartDiscoverySection />
+    </div>
+  );
 };
 
 export default HomePage;

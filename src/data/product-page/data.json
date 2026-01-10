@@ -1,0 +1,160 @@
+{
+    "smartDiscovery": {
+        "title": "Smart Discovery. Real Impact.",
+        "subtitle": "Unlock Advanced, Contextual Search Capabilities For Your Enterprise",
+        "image": "/assets/image/story-discover.png",
+        "imageAlt": "Professional showcasing AI search and discovery technology",
+        "features": [
+            {
+                "id": 1,
+                "number": "01.",
+                "title": "Semantic And Natural Language Search",
+                "description": "Enable users to search using natural language queries instead of specific keywords. The system understands the intent and context behind queries to deliver more accurate and relevant results.",
+                "details": [
+                    {
+                        "heading": "Contextual Understanding:",
+                        "text": "Goes beyond keyword matching to understand the meaning and relationships between concepts."
+                    },
+                    {
+                        "heading": "Intent Recognition:",
+                        "text": "Identifies what users are actually looking for, even when queries are vague or conversational."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "number": "02.",
+                "title": "Personalized And Contextual Search",
+                "description": "Tailor search results based on user preferences, behavior, and context to deliver highly relevant information.",
+                "details": [
+                    {
+                        "heading": "User Profile Integration:",
+                        "text": "Leverages user history, role, and preferences to customize search results."
+                    },
+                    {
+                        "heading": "Contextual Awareness:",
+                        "text": "Considers the user's current task, location, and environment to provide relevant suggestions."
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "number": "03.",
+                "title": "Multimodal Search",
+                "description": "Search across different types of content including text, images, videos, and audio using various input methods.",
+                "details": [
+                    {
+                        "heading": "Cross-Format Discovery:",
+                        "text": "Find information regardless of whether it's stored as text, image, video, or audio."
+                    },
+                    {
+                        "heading": "Multiple Input Types:",
+                        "text": "Support for text queries, image uploads, voice commands, and visual search."
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "number": "04.",
+                "title": "Generative AI Search And Discovery",
+                "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
+                "details": [
+                    {
+                        "heading": "Retrieval-Augmented Generation (RAG):",
+                        "text": "This technique combines traditional search with generative AI. It first retrieves relevant information from a knowledge base, then uses an LLM to generate an answer based on that information."
+                    },
+                    {
+                        "heading": "Conversational AI:",
+                        "text": "Powers chatbots and virtual assistants that can respond to natural language questions in a conversational manner. Instead of a list of links, the user gets a synthesized answer."
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "number": "05.",
+                "title": "Hybrid Search",
+                "description": "Combine multiple search techniques including keyword-based, semantic, and AI-powered search for optimal results.",
+                "details": [
+                    {
+                        "heading": "Best of Both Worlds:",
+                        "text": "Merges traditional keyword search with modern semantic understanding for comprehensive results."
+                    },
+                    {
+                        "heading": "Adaptive Ranking:",
+                        "text": "Intelligently ranks results by combining multiple relevance signals and user engagement patterns."
+                    }
+                ]
+            }
+        ]
+    },
+    "advancedFeatures": {
+        "title": "Advanced Features Built For Modern Enterprises",
+        "image": "/assets/image/advanceFeature.png",
+        "imageAlt": "Network visualization showing contextual understanding",
+        "mainFeature": {
+            "title": "Contextual Understanding",
+            "description": "Your AI Search Engine Doesn't Just Match Keywords — It Understands Context, Intent, And Relationships Between Terms. Using Advanced Language Models And Knowledge Graphs."
+        },
+        "benefits": {
+            "title": "Benefits / Outcomes",
+            "items": [
+                {
+                    "id": 1,
+                    "heading": "Accurate, Intent-Driven Results:",
+                    "text": "Reduces Irrelevant Results Caused By Keyword-Only Matching."
+                },
+                {
+                    "id": 2,
+                    "heading": "Smarter Discovery:",
+                    "text": "Surfaces Related Content Users Didn't Explicitly Search For But May Need."
+                },
+                {
+                    "id": 3,
+                    "heading": "Faster Decision-Making:",
+                    "text": "Users Spend Less Time Refining Queries Or Digging Through Results."
+                },
+                {
+                    "id": 4,
+                    "heading": "Human-Like Understanding:",
+                    "text": "Handles Natural, Conversational Queries With Ease."
+                },
+                {
+                    "id": 5,
+                    "heading": "Personalized Context:",
+                    "text": "Adapts Understanding Based On User History, Department, Or Domain."
+                }
+            ]
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Discover real experiences from clients who have benefited from our services and expertise.",
+        "questions": [
+            {
+                "id": 1,
+                "question": "AI solutions built for real business impact–at scale",
+                "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            },
+            {
+                "id": 2,
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "id": 3,
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "id": 4,
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "id": 5,
+                "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        ]
+    }
+}
