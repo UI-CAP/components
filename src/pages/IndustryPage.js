@@ -3,6 +3,9 @@ import Footer from "@/component/home-page/Footer";
 import WhyChooseSection from "@/component/industry-page/WhyChooseSection";
 import SolutionSection from "@/component/industry-page/SolutionSection";
 import BannerSection from "@/component/home-page/BannerSection";
+import Benefits from "@/component/industry-page/Benefits";
+import Services from "@/component/industry-page/Services";
+import IndustryRecognition from "@/component/industry-page/IndustryRecognition";
 
 const IndustryPage = () => {
   return (
@@ -11,6 +14,9 @@ const IndustryPage = () => {
       <BannerSection/>
       <WhyChooseSection />
       <SolutionSection />
+      <Benefits/>
+      <Services/>
+      <IndustryRecognition/>
       <Footer />
     </div>
   );

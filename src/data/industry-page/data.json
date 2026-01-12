@@ -33,13 +33,15 @@
     "solution": {
         "title": "Our Solution",
         "subtitle": "Unlock advanced, contextual search capabilities for your enterprise",
-        "image": "/assets/image/solution-city.png",
+        "image": "/assets/image/solution1.jpg",
         "imageAlt": "City lights visualization representing advanced search solutions",
         "solutions": [
             {
                 "id": 1,
                 "number": "01.",
                 "title": "Semantic And Natural Language Search",
+                "image": "/assets/image/solution1.jpg",
+                "imageAlt": "Semantic and natural language search illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
                     {
@@ -64,6 +66,8 @@
                 "id": 2,
                 "number": "02.",
                 "title": "Personalized And Contextual Search",
+                "image": "/assets/image/solution1.jpg",
+                "imageAlt": "Personalized contextual search illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
                     {
@@ -80,6 +84,8 @@
                 "id": 3,
                 "number": "03.",
                 "title": "Multimodal Search",
+                "image": "/assets/image/solution1.jpg",
+                "imageAlt": "Multimodal search illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
                     {
@@ -92,6 +98,8 @@
                 "id": 4,
                 "number": "04.",
                 "title": "Generative AI Search And Discovery",
+                "image": "/assets/image/solution1.jpg",
+                "imageAlt": "Generative AI search and discovery illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
                     {
@@ -116,6 +124,8 @@
                 "id": 5,
                 "number": "05.",
                 "title": "Hybrid Search",
+                "image": "/assets/image/solution1.jpg",
+                "imageAlt": "Hybrid search illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
                     {
@@ -125,5 +135,136 @@
                 ]
             }
         ]
+    },
+    "benefits": {
+        "badge": "Benefits",
+        "image": "/assets/image/benefits1.png",
+        "imageAlt": "Mobile interface showing seamless communication",
+        "tabs": [
+            {
+                "id": 1,
+                "title": "Speed And Clarity In Every Interaction.",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            },
+            {
+                "id": 2,
+                "title": "Enhanced Productivity For Your Team.",
+                "description": "Streamlined processes and intelligent automation. Empower your team with tools that reduce friction and accelerate results."
+            },
+            {
+                "id": 3,
+                "title": "Scalable Solutions For Growing Businesses.",
+                "description": "Flexible infrastructure that adapts to your needs. Scale effortlessly while maintaining performance and reliability across all operations."
+            },
+            {
+                "id": 4,
+                "title": "Data-Driven Insights For Better Decisions.",
+                "description": "Comprehensive analytics and real-time reporting. Make informed decisions with actionable insights that drive business growth."
+            }
+        ],
+        "background": {
+            "type": "image",
+            "src": "/assets/image/benefits2.png",
+            "alt": "Subtle background image for benefits section"
+        }
+    },
+    "services": {
+        "title": "Other Services",
+        "subtitle": "Complementary solutions designed to support every need",
+        "cards": [
+            {
+                "id": 1,
+                "icon": "/assets/icon/services1.png",
+                "title": "Lorem ipsum dolor",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            },
+            {
+                "id": 2,
+                "icon": "/assets/icon/services1.png",
+                "title": "Lorem ipsum dolor",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            },
+            {
+                "id": 3,
+                "icon": "/assets/icon/services1.png",
+                "title": "Lorem ipsum dolor",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            },
+            {
+                "id": 4,
+                "icon": "/assets/icon/services1.png",
+                "title": "Lorem ipsum dolor",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            },
+            {
+                "id": 5,
+                "icon": "/assets/icon/services1.png",
+                "title": "Lorem ipsum dolor",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            },
+            {
+                "id": 6,
+                "icon": "/assets/icon/services1.png",
+                "title": "Lorem ipsum dolor",
+                "description": "Seamless communication across every channel. Smarter workflows, clearer touchpoints, and effortless connection that keeps everything moving."
+            }
+        ]
+    },
+    "recognition": {
+        "title": "Awards & Recognition",
+        "subtitle": "Making A Name In The Industry",
+        "timelineStart": 2012,
+        "timelineEnd": 2026,
+        "awards": [
+            {
+                "year": 2018,
+                "items": [
+                    {
+                        "id": 1,
+                        "title": "Best Exchange in Bullion",
+                        "description": "Awarded the 'Best Exchange in Bullion' 2018, at the Assocham - 11th International Gold Summit, September 2018"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Best Commodity Exchange",
+                        "description": "Honoured as the 'Best Commodity Exchange' 2018, by PHD Chamber of Commerce and Industry, September 2018"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Best Commodity Exchange",
+                        "description": "Awarded the 'Best Commodity Exchange' at the India International Gold Convention, August 2018"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Awarded as the 'Best Commodity Exchange' of the Bullion Federation of India"
+                    }
+                ]
+            },
+            {
+                "year": 2019,
+                "items": [
+                    {
+                        "id": 1,
+                        "title": "Best Commodity Exchange",
+                        "description": "Awarded the 'Best Commodity Exchange' at the India International Gold Convention, August 2019"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Best Exchange in Bullion",
+                        "description": "Awarded the 'Best Exchange For Bullion, Metals and Energy' by Commodity Participants Association of India (CPAI), July 2019"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Best Exchange in Bullion",
+                        "description": "Honoured with the 'Best Commodity Exchange' Award at the India International Bullion Summit, March 2019"
+                    }
+                ]
+            }
+        ]
+    },
+    "background": {
+        "type": "image",
+        "src": "/assets/image/industry1.png",
+        "alt": "Industry background"
     }
 }
