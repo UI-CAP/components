@@ -9,7 +9,6 @@ import TestimonialsSection from "@/component/home-page/TestimonialsSection";
 import SuccessStoriesSection from "@/component/home-page/SuccessStoriesSection";
 import InsightsSection from "@/component/home-page/InsightsSection";
 import AgenticCtaSection from "@/component/home-page/AgenticCtaSection";
-import SmartDiscoverySection from "@/component/product-page/SmartDiscoverySection";
 
 const HomePage = () => {
   return (
@@ -25,7 +24,6 @@ const HomePage = () => {
       <InsightsSection />
       <AgenticCtaSection />
       <Footer />
-      <SmartDiscoverySection />
     </div>
   );
 };

@@ -1,0 +1,158 @@
+{
+    "leaders": {
+        "title": "The Leaders Guiding Our Way",
+        "subtitle": "Complementary solutions designed to support every need",
+        "members": [
+            {
+                "id": 1,
+                "name": "Shreyansh Rathod",
+                "title": "Director - Thought Leadership",
+                "image": "/assets/image/redGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Dilpreet Kaur",
+                "title": "Director - Thought Leadership",
+                "image": "/assets/image/grayGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 3,
+                "name": "Dipika Kansara",
+                "title": "Director - Thought Leadership",
+                "image": "/assets/image/redGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 4,
+                "name": "Bhalchandra Dabholkar",
+                "title": "Assistant Vice President - HR",
+                "image": "/assets/image/grayGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 5,
+                "name": "Shreyansh Rathod",
+                "title": "Director - Thought Leadership",
+                "image": "/assets/image/redGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 6,
+                "name": "Dilpreet Kaur",
+                "title": "Director - Thought Leadership",
+                "image": "/assets/image/grayGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 7,
+                "name": "Dipika Kansara",
+                "title": "Director - Thought Leadership",
+                "image": "/assets/image/redGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            },
+            {
+                "id": 8,
+                "name": "Bhalchandra Dabholkar",
+                "title": "Assistant Vice President - HR",
+                "image": "/assets/image/grayGirl.png",
+                "socials": {
+                    "linkedin": "https://linkedin.com",
+                    "twitter": "https://twitter.com",
+                    "youtube": "https://youtube.com"
+                }
+            }
+        ]
+    },
+    "advisors": {
+        "title": "...And Advisors Who Inspire",
+        "subtitle": "Complementary solutions designed to support every need",
+        "members": [
+            {
+                "id": 1,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 2,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 3,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 4,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 5,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 6,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 7,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            },
+            {
+                "id": 8,
+                "name": "Raj Chitale",
+                "title": "Advisor - Thought Leadership",
+                "image": "/assets/image/advisor.png",
+                "linkedin": "https://linkedin.com"
+            }
+        ]
+    }
+}
