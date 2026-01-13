@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
                 {/* Header Section */}
                 <div className="flex px-[7%] flex-col lg:flex-row justify-between items-center mb-12 gap-20">
                     <div className="flex-1 min-w-1/2">
-                        <h2 className="font-bold text-black">
+                        <h2 className="font-bold text-left text-black">
                             {title}
                         </h2>
                     </div>

@@ -5,6 +5,8 @@ import BannerSection from "@/component/home-page/BannerSection";
 import Advisors from "@/component/aboutUs-page/Advisors";
 import Culture from "@/component/aboutUs-page/Culture";
 import StoryTimeline from "@/component/aboutUs-page/StoryTimeline";
+import Error404 from "@/component/aboutUs-page/Error404";
+import TeamSection from "@/component/aboutUs-page/TeamSection";
 
 const AboutUsPage = () => {
   return (
@@ -15,6 +17,8 @@ const AboutUsPage = () => {
       <Culture />
       <StoryTimeline />
       <Advisors />
+      <Error404 />
+      <TeamSection />
       <Footer />
     </div>
   );

@@ -204,37 +204,109 @@
                 "id": 1,
                 "year": "2002",
                 "title": "The Beginning",
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "description": "Lorem1 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "id": 2,
                 "year": "2003",
                 "title": "First Milestone",
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "description": "Lorem2 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "id": 3,
                 "year": "2007",
                 "title": "Major Expansion",
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "description": "Lorem3 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "id": 4,
                 "year": "2010",
                 "title": "Innovation Era",
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "description": "Lorem4 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "id": 5,
                 "year": "2015",
                 "title": "Global Reach",
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "description": "Lorem5 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             },
             {
                 "id": 6,
                 "year": "2020",
                 "title": "Digital Transformation",
-                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                "description": "Lorem6 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+        ]
+    },
+    "error404": {
+        "label": "(404 ERROR)",
+        "title": "Oops, We Can't Find This Page",
+        "buttonText": "GO TO THE HOME PAGE",
+        "image": "/assets/image/404.gif"
+    },
+    "teamSection": {
+        "title": "Tech Section",
+        "description": "Discover real experiences from clients who have benefited from our services and expertise.",
+        "categories": [
+            {
+                "id": 1,
+                "title": "Front-End",
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "Java",
+                        "icon": "java",
+                        "color": "#E76F00"
+                    },
+                    {
+                        "id": 2,
+                        "name": "NodeJS",
+                        "icon": "nodejs",
+                        "color": "#339933"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Python",
+                        "icon": "python",
+                        "color": "#3776AB"
+                    },
+                    {
+                        "id": 4,
+                        "name": ".NET",
+                        "icon": "dotnet",
+                        "color": "#512BD4"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Back-End",
+                "items": [
+                    {
+                        "id": 1,
+                        "name": "JavaScript",
+                        "icon": "javascript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "id": 2,
+                        "name": "TypeScript",
+                        "icon": "typescript",
+                        "color": "#3178C6"
+                    },
+                    {
+                        "id": 3,
+                        "name": "React",
+                        "icon": "react",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Angular",
+                        "icon": "angular",
+                        "color": "#DD0031"
+                    }
+                ]
             }
         ]
     }

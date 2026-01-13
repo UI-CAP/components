@@ -404,7 +404,7 @@
             "Smart Search And Discovery": {
                 "title": "Smart Search and Discovery",
                 "description": "Easily customize and deploy AI solutions tailored to automate, optimize, and adapt to any task or business workflow.",
-                "image": "/assets/video/AI-powred.mp4"
+                "image": "/assets/image/AI-powred.mp4"
             },
             "Conversational": {
                 "title": "Conversational AI",
@@ -620,7 +620,7 @@
                 "category": "Blog",
                 "title": "Geo-Social Platform for Drivers Everywhere",
                 "description": "By being simple yet precise, the title avoids unnecessary jargon and makes it easy.",
-                "image": "/assets/image/menu3.png",
+                "image": "/assets/image/test.jpg",
                 "link": "#"
             },
             {
@@ -628,7 +628,7 @@
                 "category": "Event",
                 "title": "AI Solutions Built for Real Business Impact—At Scale",
                 "description": "It's straightforward interface means users quickly grasp the product's main functions.",
-                "image": "/assets/image/menu1.png",
+                "image": "/assets/image/test.jpg",
                 "link": "#"
             },
             {
@@ -636,7 +636,7 @@
                 "category": "News",
                 "title": "AI-Powered Copilot for Modern Drivers, Everywhere",
                 "description": "It's intuitive design ensures users quickly understand the product's core benefits.",
-                "image": "/assets/image/menu2.png",
+                "image": "/assets/image/test.jpg",
                 "link": "#"
             },
             {
@@ -644,7 +644,7 @@
                 "category": "Case Study",
                 "title": "Geo-Social Platform for Drivers Everywhere",
                 "description": "Its simple design helps drivers quickly grasp the product's key features.",
-                "image": "/assets/image/menu4.png",
+                "image": "/assets/image/test.jpg",
                 "link": "#"
             },
             {
@@ -652,7 +652,7 @@
                 "category": "Blog",
                 "title": "Understanding AI in Modern Transportation",
                 "description": "By being simple yet precise, the title avoids unnecessary jargon and makes it easy.",
-                "image": "/assets/video/banner2.jpg",
+                "image": "/assets/image/test.jpg",
                 "link": "#"
             },
             {
@@ -660,7 +660,7 @@
                 "category": "News",
                 "title": "Latest Trends in AI Technology",
                 "description": "It's intuitive design ensures users quickly understand the product's core benefits.",
-                "image": "/assets/video/banner2.jpg",
+                "image": "/assets/image/test.jpg",
                 "link": "#"
             }
         ]
