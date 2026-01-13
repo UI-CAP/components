@@ -154,5 +154,88 @@
                 "linkedin": "https://linkedin.com"
             }
         ]
+    },
+    "culture": {
+        "title": "We Bring Good Vibes To Great Work",
+        "subtitle": "Complementary solutions designed to support every need",
+        "images": [
+            {
+                "id": 1,
+                "src": "/assets/image/culture1.png",
+                "alt": "Team collaboration in meeting"
+            },
+            {
+                "id": 2,
+                "src": "/assets/image/culture2.png",
+                "alt": "Team discussion"
+            },
+            {
+                "id": 3,
+                "src": "/assets/image/culture3.png",
+                "alt": "Team building activity"
+            },
+            {
+                "id": 4,
+                "src": "/assets/image/culture4.png",
+                "alt": "Celebration moment"
+            },
+            {
+                "id": 5,
+                "src": "/assets/image/culture5.png",
+                "alt": "Office workspace"
+            },
+            {
+                "id": 6,
+                "src": "/assets/image/culture6.png",
+                "alt": "Team collaboration"
+            },
+            {
+                "id": 7,
+                "src": "/assets/image/culture7.png",
+                "alt": "Team celebration"
+            }
+        ]
+    },
+    "storyTimeline": {
+        "title": "Our Story",
+        "subtitle": "Journey through the years",
+        "events": [
+            {
+                "id": 1,
+                "year": "2002",
+                "title": "The Beginning",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "id": 2,
+                "year": "2003",
+                "title": "First Milestone",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "id": 3,
+                "year": "2007",
+                "title": "Major Expansion",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "id": 4,
+                "year": "2010",
+                "title": "Innovation Era",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "id": 5,
+                "year": "2015",
+                "title": "Global Reach",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            },
+            {
+                "id": 6,
+                "year": "2020",
+                "title": "Digital Transformation",
+                "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+        ]
     }
 }

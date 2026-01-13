@@ -11,12 +11,12 @@ const IndustryPage = () => {
   return (
     <div className="bg-white min-h-screen">
       <MenuBar />
-      <BannerSection/>
+      <BannerSection />
       <WhyChooseSection />
       <SolutionSection />
-      <Benefits/>
-      <Services/>
-      <IndustryRecognition/>
+      <Benefits />
+      <Services />
+      <IndustryRecognition />
       <Footer />
     </div>
   );
