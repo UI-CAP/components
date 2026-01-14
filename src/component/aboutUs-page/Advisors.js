@@ -5,10 +5,27 @@ import Image from 'next/image';
 import data from "@/data/aboutUs-page/data.json";
 
 const Advisors = () => {
-    const advisorsData = data.advisors;
-    const { title, subtitle, members } = advisorsData || {};
+    const advisorsData = data.advisors || {};
+    const { title, subtitle, members = [] } = advisorsData;
 
-    if (!advisorsData) return null;
+    const [cardWidthVw, setCardWidthVw] = useState(null);
+    const [cardHeightVh, setCardHeightVh] = useState(null);
+
+    useEffect(() => {
+        const update = () => {
+            if (typeof window === 'undefined') return;
+            const vw = (400 / window.innerWidth) * 100; // 400px target -> vw
+            const vh = (108 / window.innerHeight) * 100; // 108px target -> vh
+            const widthValue = window.innerWidth < 640 ? 100 : vw; // mobile: full width
+            setCardWidthVw(widthValue);
+            setCardHeightVh(vh);
+        };
+        update();
+        window.addEventListener('resize', update);
+        return () => window.removeEventListener('resize', update);
+    }, []);
+
+    if (members.length === 0) return null;
 
     return (
         <section className="w-full bg-white py-16 md:py-20 lg:py-24">
@@ -25,34 +42,16 @@ const Advisors = () => {
 
                 {/* Advisors Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    {members && (() => {
-                        const [cardWidthVw, setCardWidthVw] = useState(null);
-                        const [cardHeightVh, setCardHeightVh] = useState(null);
-
-                        useEffect(() => {
-                            const update = () => {
-                                if (typeof window === 'undefined') return;
-                                const vw = (400 / window.innerWidth) * 100; // 315px target -> vw
-                                const vh = (108 / window.innerHeight) * 100; // 108px target -> vh
-                                const widthValue = window.innerWidth < 640 ? 100 : vw; // mobile: full width
-                                setCardWidthVw(widthValue);
-                                setCardHeightVh(vh);
-                            };
-                            update();
-                            window.addEventListener('resize', update);
-                            return () => window.removeEventListener('resize', update);
-                        }, []);
-
-                        return members.map((advisor) => (
-                            <div
-                                key={advisor.id}
-                                className="advisor-card flex items-start gap-3 p-4 rounded-2xl bg-[#F6F6F699] hover:shadow-md transition-shadow duration-300"
-                                style={{
-                                    width: cardWidthVw ? `${cardWidthVw}vw` : undefined,
-                                    height: cardHeightVh ? `${cardHeightVh}vh` : undefined,
-                                    minWidth: '320px'
-                                }}
-                            >
+                    {members.map((advisor) => (
+                        <div
+                            key={advisor.id}
+                            className="advisor-card flex items-start gap-3 p-4 rounded-2xl bg-[#F6F6F699] hover:shadow-md transition-shadow duration-300"
+                            style={{
+                                width: cardWidthVw ? `${cardWidthVw}vw` : undefined,
+                                height: cardHeightVh ? `${cardHeightVh}vh` : undefined,
+                                minWidth: '320px'
+                            }}
+                        >
                             {/* Circular Profile Image */}
                             <div className="flex-shrink-0">
                                 <div className="relative w-20 h-20 rounded-lg overflow-hidden bg-gray-200">
@@ -101,8 +100,7 @@ const Advisors = () => {
 
                             </div>
                         </div>
-                        ));
-                    })()}
+                    ))}
                 </div>
             </div>
         </section>

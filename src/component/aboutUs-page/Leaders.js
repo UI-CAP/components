@@ -5,9 +5,8 @@ import Image from "next/image";
 import data from "@/data/aboutUs-page/data.json";
 
 const Leaders = () => {
-  const leadersData = data.leaders;
-  if (!leadersData) return null;
-  const { title, subtitle, members } = leadersData;
+  const leadersData = data.leaders || {};
+  const { title, subtitle, members = [] } = leadersData;
 
   const [cardWidthVw, setCardWidthVw] = useState(null);
   const [cardHeightVh, setCardHeightVh] = useState(null);
@@ -26,6 +25,8 @@ const Leaders = () => {
     return () => window.removeEventListener("resize", update);
   }, []);
 
+  if (members.length === 0) return null;
+
   return (
     <section className="w-full px-[2%] bg-[#F6F6F6] py-16 md:py-20 lg:py-24">
       <div>
@@ -39,9 +40,8 @@ const Leaders = () => {
         <div className="flex flex-wrap gap-6 md:gap-8 justify-center">
           {members &&
             members.map((member) => (
-              <div className="rounded-3xl bg-white p-2">
+              <div key={member.id} className="rounded-3xl bg-white p-2">
                   <div
-                  key={member.id}
                   className="leader-card group relative overflow-hidden rounded-3xl bg-gradient-to-b from-gray-100 to-gray-200"
                   style={{
                     width: cardWidthVw ? `${cardWidthVw}vw` : undefined,
