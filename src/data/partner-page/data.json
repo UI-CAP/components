@@ -1,0 +1,96 @@
+{
+  "partnerEnquiryForm": {
+    "title": "Become A Partner With",
+    "brandName": "Vishleshan.Ai",
+    "highlightedText": "Now",
+    "formTitle": "CONTACTS INFORMATION",
+    "fields": {
+      "fullName": {
+        "label": "Enter your Full name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your Full name"
+      },
+      "companyName": {
+        "label": "Company name",
+        "type": "text",
+        "required": false,
+        "placeholder": "Company name"
+      },
+      "websiteUrl": {
+        "label": "Website URL",
+        "type": "text",
+        "required": false,
+        "placeholder": "Website URL"
+      },
+      "businessEmail": {
+        "label": "Business Email",
+        "type": "email",
+        "required": true,
+        "placeholder": "Business Email"
+      },
+      "contactNumber": {
+        "label": "Contact Number",
+        "type": "tel",
+        "required": true,
+        "placeholder": "Contact Number"
+      },
+      "country": {
+        "label": "Country",
+        "type": "select",
+        "required": true,
+        "options": [
+          "India",
+          "United States",
+          "United Kingdom",
+          "Canada",
+          "Australia",
+          "Germany",
+          "Singapore",
+          "UAE"
+        ],
+        "defaultValue": "India"
+      },
+      "partnerProgram": {
+        "label": "I'm interested in partner program for",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Technology Partnership",
+          "Reseller Partnership",
+          "Integration Partnership",
+          "Strategic Alliance",
+          "Consulting Partnership",
+          "Other"
+        ],
+        "placeholder": "I'm interested in partner program for"
+      }
+    },
+    "submitButton": {
+      "text": "Become A Partner",
+      "icon": "arrow"
+    },
+    "backgroundImages": [
+      {
+        "id": 1,
+        "position": "top-left",
+        "size": "large"
+      },
+      {
+        "id": 2,
+        "position": "top-center",
+        "size": "small"
+      },
+      {
+        "id": 3,
+        "position": "top-right",
+        "size": "medium"
+      },
+      {
+        "id": 4,
+        "position": "center-right",
+        "size": "small"
+      }
+    ]
+  }
+}

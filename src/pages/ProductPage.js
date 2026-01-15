@@ -12,6 +12,7 @@ const ProductPage = () => {
       <SmartDiscoverySection />
       <AdvancedFeaturesSection />
       <FAQSection />
+      <Footer />
     </div>
   );
 };

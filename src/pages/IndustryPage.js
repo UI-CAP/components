@@ -6,6 +6,7 @@ import BannerSection from "@/component/home-page/BannerSection";
 import Benefits from "@/component/industry-page/Benefits";
 import Services from "@/component/industry-page/Services";
 import IndustryRecognition from "@/component/industry-page/IndustryRecognition";
+import DemoDetails from "@/component/industry-page/DemoDetails";
 
 const IndustryPage = () => {
   return (
@@ -17,6 +18,7 @@ const IndustryPage = () => {
       <Benefits />
       <Services />
       <IndustryRecognition />
+      <DemoDetails />
       <Footer />
     </div>
   );

@@ -1,0 +1,220 @@
+{
+  "partnerEnquiryForm": {
+    "title": "Become A Partner With",
+    "brandName": "Vishleshan.Ai",
+    "highlightedText": "Now",
+    "formTitle": "CONTACTS INFORMATION",
+    "fields": {
+      "fullName": {
+        "label": "Enter your Full name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your Full name"
+      },
+      "companyName": {
+        "label": "Company name",
+        "type": "text",
+        "required": false,
+        "placeholder": "Company name"
+      },
+      "websiteUrl": {
+        "label": "Website URL",
+        "type": "text",
+        "required": false,
+        "placeholder": "Website URL"
+      },
+      "businessEmail": {
+        "label": "Business Email",
+        "type": "email",
+        "required": true,
+        "placeholder": "Business Email"
+      },
+      "contactNumber": {
+        "label": "Contact Number",
+        "type": "tel",
+        "required": true,
+        "placeholder": "Contact Number"
+      },
+      "country": {
+        "label": "Country",
+        "type": "select",
+        "required": true,
+        "options": [
+          "India",
+          "United States",
+          "United Kingdom",
+          "Canada",
+          "Australia",
+          "Germany",
+          "Singapore",
+          "UAE"
+        ],
+        "defaultValue": "India"
+      },
+      "partnerProgram": {
+        "label": "I'm interested in partner program for",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Technology Partnership",
+          "Reseller Partnership",
+          "Integration Partnership",
+          "Strategic Alliance",
+          "Consulting Partnership",
+          "Other"
+        ],
+        "placeholder": "I'm interested in partner program for"
+      }
+    },
+    "submitButton": {
+      "text": "Become A Partner",
+      "icon": "arrow"
+    },
+    "background": {
+      "src": "/assets/image/partner1.jpg"
+    },
+    "backgroundImages": [
+      {
+        "id": 1,
+        "position": "top-left",
+        "size": "large"
+      },
+      {
+        "id": 2,
+        "position": "top-center",
+        "size": "small"
+      },
+      {
+        "id": 3,
+        "position": "top-right",
+        "size": "medium"
+      },
+      {
+        "id": 4,
+        "position": "center-right",
+        "size": "small"
+      }
+    ]
+  },
+  "ceosMessage": {
+    "quote": "I believe that the strength in our team and our ability to deal with adversities is what makes us a great partner for our clients I believe that the strength in our team and our ability to deal with adversities is what makes us a great partner for our clients I believe that the strength in our team and our ability to deal with adversities is what makes us a great partner for our clients I believe that the strength in our team and our ability to deal with adversities is what makes us a great partner for our clients",
+    "tagText": "This Is Why I'm Proud To Be On This Team",
+    "name": "Christopher Johnsons",
+    "designation": "CEO, Vishleshan Ai",
+    "rightSectionImage": "/assets/image/ceo.png",
+    "background": {
+      "src": "/assets/image/Stats.png",
+      "type": "image"
+    }
+  },
+  "demoDetails": {
+    "title": "Demo Title",
+    "publishedDate": "2 Months Ago",
+    "videoSrc": "/assets/video/banner.mp4",
+    "videoPoster": "/assets/image/video-poster.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "bookADemo": {
+    "title": "Couldn't Find A Slot?",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut",
+    "image": "/assets/image/book1.png",
+    "fields": {
+      "fullName": {
+        "label": "Enter your Full name",
+        "placeholder": "Enter your Full name",
+        "required": true
+      },
+      "companyName": {
+        "placeholder": "Company name",
+        "icon": "/assets/icon/telephone.png"
+      },
+      "websiteUrl": {
+        "placeholder": "Website URL",
+        "icon": "/assets/icon/telephone.png"
+      },
+      "businessEmail": {
+        "placeholder": "Business Email",
+        "icon": "/assets/icon/email.png",
+        "required": true
+      },
+      "contactNumber": {
+        "placeholder": "Contact Number",
+        "icon": "/assets/icon/telephone.png",
+        "required": true
+      },
+      "country": {
+        "defaultValue": "India",
+        "options": [
+          "India",
+          "United States",
+          "United Kingdom",
+          "Canada",
+          "Australia"
+        ],
+        "icon": "/assets/icon/location.png",
+        "required": true
+      },
+      "message": {
+        "placeholder": "Enter Message"
+      }
+    },
+    "submitButton": {
+      "text": "Submit"
+    }
+  },
+  "jobPortal": {
+    "title": "Job Opportunities",
+    "search": {
+      "job": {
+        "placeholder": "Job title or skill",
+        "icon": "search"
+      },
+      "location": {
+        "placeholder": "Location",
+        "icon": "location"
+      },
+      "buttonText": "Search"
+    },
+    "filters": [
+      "ALL",
+      "UX / UI Designer",
+      "Front End Developer",
+      "Full Stack Developer"
+    ]
+  },
+  "jobOpportunity": [
+    {
+      "id": 1,
+      "title": "UI/UX Designer",
+      "jobType": "Full-time",
+      "location": "Mumbai",
+      "dateOpened": "07/01/2026",
+      "description": "As a UX/UI Designer, you will be responsible for creating engaging and intuitive digital experiences that meet user needs and business objectives. You will collaborate with cross-functional teams, including developers, product managers, and stakeholders, to create user-centered designs that align with project goals and brand standards. You will be provided with Company Benefits like PF, ESI and Joining Bonuses.",
+      "responsibilities": [
+        "Conduct user research and analysis to understand user needs, pain points, and behaviors.",
+        "Develop user personas, user stories, and user journeys to guide design decisions.",
+        "Create wireframes, prototypes, and visual designs that effectively communicate design concepts and user flows.",
+        "Collaborate with developers to ensure design implementation is technically feasible and meets usability standards.",
+        "Conduct usability testing and user feedback sessions to validate design decisions and identify areas for improvement.",
+        "Create and maintain design systems, style guides, and pattern libraries to ensure consistency across products and platforms.",
+        "Stay up-to-date with industry trends, emerging technologies, and design best practices."
+      ],
+      "applyButtonText": "Apply Now"
+    },
+    {
+      "id": 2,
+      "title": "UI Lead",
+      "jobType": "Full-time",
+      "location": "Mumbai",
+      "dateOpened": "10/01/2026",
+      "description": "We are looking for a UI Lead to head our design initiatives. You will be overseeing the entire design lifecycle, ensuring high-quality output and mentoring junior designers.",
+      "responsibilities": [
+        "Lead the UI design team and establish design standards.",
+        "Review and approve all visual assets before production.",
+        "Work closely with product owners to define visual strategy.",
+        "Promote a culture of design excellence within the organization."
+      ],
+      "applyButtonText": "Apply Now"
+    }
+  ]
+}
