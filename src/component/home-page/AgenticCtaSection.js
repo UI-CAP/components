@@ -48,15 +48,15 @@ const AgenticCtaSection = () => {
         />
       )}
 
-      {/* Content */}
+        {/* Content */}
       <div className="relative z-10 w-full flex flex-row items-center justify-between px-[4vw] py-12 gap-8">
         {/* Left Section */}
-        <div className="flex-1 min-w-[260px] max-w-[600px] text-white flex flex-col items-start justify-center gap-6">
+        <div className="flex-1 min-w-[260px] max-w-[600px] text-white text-left flex flex-col items-start justify-center gap-6">
           <h2
-            className="text-[2.4rem] font-bold leading-tight m-0 text-white tracking-tight"
+            className="text-[2.4rem] font-bold leading-tight m-0 text-white tracking-tight text-left"
             dangerouslySetInnerHTML={{ __html: ctaData.title }}
           />
-          <p className="text-[1.1rem] font-normal m-0 text-[#E0E3F1]">
+          <p className="text-[1.1rem] font-normal m-0 text-[#E0E3F1] text-left">
             {ctaData.description}
           </p>
           <div className="flex gap-6 mt-6">

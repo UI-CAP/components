@@ -16,7 +16,7 @@ const DemoDetails = () => {
     };
 
     return (
-        <section className="w-full bg-white px-[20px] md:px-[60px] py-[40px] max-w-[1440px] mx-auto font-sans">
+        <section className="w-full bg-white px-[20px] md:px-[60px] py-[40px] font-sans">
             {/* Header */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-[30px] gap-4">
                 <div className="flex flex-col gap-[6px]">

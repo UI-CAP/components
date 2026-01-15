@@ -22,6 +22,11 @@
                 "hasDropdown": true
             }
         ],
+        "logo": {
+            "src": "/assets/logo/menu.png",
+            "alt": "Vishleshan Logo",
+            "className": "h-12 object-contain"
+        },
         "megaMenu": {
             "Products & Solutions": {
                 "leftSection": {
@@ -370,6 +375,47 @@
             ]
         }
     },
+    "trustedPartners": {
+        "title": "Trusted AI Partner To Leading Enterprises",
+        "items": [
+            {
+                "name": "BAJAJ FINSERV",
+                "image": "/assets/partners/bajaj.png"
+            },
+            {
+                "name": "Dixon",
+                "image": "/assets/partners/dixon.png"
+            },
+            {
+                "name": "HAVELLS",
+                "image": "/assets/partners/havels.png"
+            },
+            {
+                "name": "LeasePlan",
+                "image": "/assets/partners/leaseryt.png"
+            },
+            {
+                "name": "LUMINOUS",
+                "image": "/assets/partners/luminous.png"
+            },
+            {
+                "name": "OLA MONEY",
+                "image": "/assets/partners/ola.png"
+            },
+            {
+                "name": "POLYCAB",
+                "image": "/assets/partners/polycab.png"
+            },
+            {
+                "name": "Signify",
+                "image": "/assets/partners/signify.png"
+            },
+            {
+                "name": "TATA CAPITAL",
+                "image": "/assets/partners/tata.png"
+            }
+        ]
+    },
     "vishleshanWay": {
         "subtitle": "The Vishleshan Way",
         "title": "Analysis. Synthesis. Intelligence.",
@@ -424,7 +470,7 @@
         }
     },
     "stats": {
-        "title": "No AI Hype Here.<br />Just Results.",
+        "title": "No AI Hype Here. Just Results.",
         "description": "Vishleshan provides an end-to-end AI platform for enterprises. From DataFlow to Aether, we offer a toolchain that enables businesses to build and deploy AI solutions across industries.",
         "image": "/assets/image/stats.png",
         "items": [

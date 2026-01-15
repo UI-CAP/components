@@ -10,9 +10,9 @@ const VishleshanWaySection = () => {
     const { subtitle, title, description, items } = vData;
 
     return (
-        <section className="w-full bg-[#F0EFFF] py-16 md:py-24 lg:py-32 px-4 md:px-8 lg:px-12">
+        <section className="w-full bg-[#F0EFFF] py-16 md:py-24 lg:py-32 px-[2%] md:px-[4%] lg:px-[10%]">
             <div
-                className="max-w-7xl mx-auto"
+                
             >
                 {/* Section Title */}
                 <p
@@ -36,20 +36,20 @@ const VishleshanWaySection = () => {
 
                 {/* Description */}
                 <p
-                    className="text-center text-gray-700 max-w-4xl mx-auto mb-12 md:mb-16 lg:mb-20 px-4 leading-relaxed"
+                    className="text-center text-gray-700 max-w-5xl mx-auto mb-12 font-regular md:mb-16 lg:mb-20 px-10 leading-relaxed"
                 >
                     {description}
                 </p>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-12 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-12">
                     {items.map((stat, index) => (
                         <div
                             key={index}
                             className="flex flex-col items-center justify-center"
                         >
                             {/* Circular stat card with gradient border effect */}
-                            <div className="relative p-3 w-48 h-48 border rounded-full border-[#FF260066]/40 md:w-56 md:h-56 lg:w-64 lg:h-64">
+                            <div className="relative p-3 w-[370px] h-[370px] border rounded-full border-[#FF260066]/40">
                                 
                                     {/* Inner dark circle */}
                                     <div className="w-full h-full bg-black rounded-full flex flex-col items-center justify-center relative overflow-hidden">
