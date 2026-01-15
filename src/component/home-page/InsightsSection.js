@@ -26,28 +26,30 @@ const InsightsSection = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-8 md:mb-12">
-                    <p className="text-sm md:text-base text-gray-600 mb-3 md:mb-4 font-medium">
+                    <p className="text-gray-600 mb-3 md:mb-4 font-medium">
                         {subtitle}
                     </p>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-8 md:mb-12">
+                    <h2 className="text-black mb-6 md:mb-8 leading-tight">
                         {title}
                     </h2>
 
-                    {/* Filter Tabs */}
-                    <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-                        {categories.map((category) => (
-                            <button
-                                key={category}
-                                onClick={() => setActiveFilter(category)}
-                                className={`px-8 md:px-12 py-2.5 md:py-3 rounded-full button transition-all duration-300 ${
-                                    activeFilter === category
-                                        ? 'bg-[#F22E62] text-white shadow-lg'
-                                        : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
-                                }`}
-                            >
-                                {category}
-                            </button>
-                        ))}
+                    {/* Filter Tabs - pill container */}
+                    <div className="flex justify-center">
+                        <div className="inline-flex items-center bg-white rounded-full p-2 shadow-lg">
+                            {categories.map((category) => (
+                                <button
+                                    key={category}
+                                    onClick={() => setActiveFilter(category)}
+                                    className={`px-6 py-2 rounded-full font-medium cursor-pointer transition-all duration-200 ${
+                                        activeFilter === category
+                                            ? 'bg-[#252A41] text-white'
+                                            : 'bg-transparent text-gray-600 hover:text-black'
+                                    }`}
+                                >
+                                    {category}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -81,36 +83,40 @@ const InsightsSection = () => {
 
 const ArticleCard = ({ article }) => {
     return (
+        <div className='border border-gray-100 p-3 rounded-4xl bg-white'>
         <a
             href={article.link}
-            className="group block bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 h-full"
+            className="group block bg-white rounded-4xl"
         >
             {/* Image Container */}
-            <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+            <div className="relative aspect-square rounded-t-4xl overflow-hidden bg-gray-100">
                 <Image
                     src={article.image}
                     alt={article.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+
                 {/* Category Badge */}
-                <div className="absolute top-4 left-4">
-                    <span className="inline-block px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full text-xs md:text-sm font-semibold text-gray-800">
+                <div className="absolute top-3 left-3">
+                    <span className="inline-block px-3 py-1 bg-white rounded-full font-semibold text-gray-800 shadow-sm">
                         {article.category}
                     </span>
                 </div>
             </div>
 
             {/* Content */}
-            <div className="p-6 md:p-8">
-                <h3 className="text-lg md:text-xl font-bold text-black mb-3 leading-tight group-hover:text-[#F22E62] transition-colors duration-300">
+            <div className="py-4">
+                <p className="font-bold text-black mb-3 leading-tight group-hover:text-[#F22E62] transition-colors duration-300 line-clamp-2">
                     {article.title}
-                </h3>
-                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                    {article.description}
                 </p>
+                <span className="text-gray-600 leading-relaxed">
+                    {article.description}
+                </span>
             </div>
         </a>
+        </div>
+
     );
 };
 

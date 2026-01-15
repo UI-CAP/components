@@ -12,7 +12,7 @@ const StatsSection = () => {
 
     return (
         <section
-            className="relative w-full min-h-[76.8vh] flex items-center py-12 pl-[18%] overflow-hidden text-white"
+            className="relative w-full min-h-[76.8vh] flex items-center py-12 px-4 overflow-hidden text-white"
         >
             {/* Background Asset - Video or Image (Conditional) */}
             {bgImage && (
@@ -38,12 +38,12 @@ const StatsSection = () => {
             )}
 
             {/* Content Container */}
-            <div className="relative z-10">
+            <div className="relative z-10 px-4 mx-auto w-full max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
 
                     {/* Left Content */}
-                    <div>
-                        <h2 className="mb-6" dangerouslySetInnerHTML={{ __html: data.stats.title }} />
+                    <div className='text-left flex flex-col items-start'>
+                        <h2 className="mb-6 text-left pr-16">{data.stats.title}</h2>
                         <p className="mb-8 max-w-xl">
                             {data.stats.description}
                         </p>

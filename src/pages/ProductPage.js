@@ -3,6 +3,7 @@ import SmartDiscoverySection from "@/component/product-page/SmartDiscoverySectio
 import AdvancedFeaturesSection from "@/component/product-page/AdvancedFeaturesSection";
 import FAQSection from "@/component/product-page/FAQSection";
 import BannerSection from "@/component/home-page/BannerSection";
+import Footer from "@/component/home-page/Footer";
 
 const ProductPage = () => {
   return (

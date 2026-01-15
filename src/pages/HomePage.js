@@ -9,12 +9,14 @@ import TestimonialsSection from "@/component/home-page/TestimonialsSection";
 import SuccessStoriesSection from "@/component/home-page/SuccessStoriesSection";
 import InsightsSection from "@/component/home-page/InsightsSection";
 import AgenticCtaSection from "@/component/home-page/AgenticCtaSection";
+import TrustedPartners from "@/component/home-page/TrustedPartners";
 
 const HomePage = () => {
   return (
     <div className="bg-white min-h-screen">
       <MenuBar />
       <BannerSection />
+      <TrustedPartners />
       <VishleshanWaySection />
       <AITransformation />
       <StatsSection />

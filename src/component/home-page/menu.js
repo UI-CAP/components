@@ -43,11 +43,15 @@ const MenuBar = () => {
     <header
       ref={headerRef}
       onMouseLeave={handleMouseLeave}
-      className={`fixed left-0 right-0 z-50 transition-all duration-300 shadow-md flex items-center justify-between ${isScrolled ? 'px-[1%] lg:px-[3%] py-4 top-5 mx-[2%] md:mx-[4%] lg:mx-[6%] rounded-full border border-gray-200/50 bg-white/90 backdrop-blur-sm' : 'px-[3%] lg:px-[7%] py-4 top-0 rounded-none border-b border-gray-100 bg-white'}`}>
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 shadow-md flex items-center justify-between ${isScrolled ? 'px-[1%] lg:px-[3%] py-4 top-5 mx-[2%] md:mx-[4%] lg:mx-[6%] rounded-full border border-gray-200/50 bg-white/90 shadow-lg backdrop-blur-sm' : 'px-[3%] lg:px-[7%] py-4 top-0 rounded-none border-b border-gray-100 bg-white'}`}>
     
       {/* Left: Logo */}
       <div className="flex items-center gap-2">
-        <img src="/assets/logo/menu.png" alt="Vishleshan Logo" className="h-12 object-contain" />
+        {data.menu && data.menu.logo ? (
+          <img src={data.menu.logo.src} alt={data.menu.logo.alt} className={data.menu.logo.className} />
+        ) : (
+          <img src="/assets/logo/menu.png" alt="Vishleshan Logo" className="h-12 object-contain" />
+        )}
       </div>
 
       {/* Center: Menu */}

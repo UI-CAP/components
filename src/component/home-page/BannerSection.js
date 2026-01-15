@@ -101,9 +101,9 @@ export default function BannerSection({
               <div
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
-                className={`relative w-16 h-8 md:w-24 md:h-12 overflow-hidden cursor-pointer transition-all p-0.5 duration-300 border-2 ${index === currentImageIndex
-                  ? "border-white scale-110 shadow-lg"
-                  : "opacity-80 border-none hover:opacity-100 hover:scale-105"
+                className={`relative overflow-hidden cursor-pointer transition-all p-0.5 duration-300 border-2 ${index === currentImageIndex
+                  ? "border-white w-26 h-13 scale-110 shadow-lg"
+                  : "border-none w-24 h-12 hover:scale-105"
                   }`}
               >
                 {isVideo(imgSrc) ? (
@@ -128,39 +128,7 @@ export default function BannerSection({
         )}
       </div>
 
-      {/* Trusted Partners Section */}
-      <section
-        className="relative z-20 py-14 rounded-t-[40px] md:rounded-t-[80px] bg-[#30354FB2] lg:rounded-t-[90px] overflow-hidden backdrop-blur-[50px]"
-      >
-        <div className="max-w-7xl mx-auto mb-8">
-          <h4 className="text-gray-400 text-center font-semibold tracking-[0.2em] uppercase">
-            {data.banner.partners.title}
-          </h4>
-        </div>
-
-        <div className="relative w-full overflow-hidden">
-          {/* Marquee Container */}
-          <div className="flex animate-marquee whitespace-nowrap min-w-max">
-            {[...data.banner.partners.items, ...data.banner.partners.items].map((logo, index) => (
-              <div
-                key={index}
-                className="relative w-28 h-8 md:w-36 md:h-12 mx-8 md:mx-12 lg:mx-16 flex-shrink-0 transition-all duration-300 hover:scale-110 cursor-pointer"
-              >
-                <Image
-                  src={logo.image}
-                  alt={logo.name}
-                  fill
-                  className="object-contain grayscale brightness-200 opacity-80 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Gradient Fades for Smooth Edges */}
-          <div className="absolute inset-y-0 left-0 w-20 md:w-40 bg-gradient-to-r from-[#30354F] to-transparent z-10 pointer-events-none opacity-50"></div>
-          <div className="absolute inset-y-0 right-0 w-20 md:w-40 bg-gradient-to-l from-[#30354F] to-transparent z-10 pointer-events-none opacity-50"></div>
-        </div>
-      </section>
+      {/* Trusted Partners moved to separate component: TrustedPartners.js */}
     </div>
   );
 }
