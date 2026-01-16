@@ -46,7 +46,7 @@ const CEOsMessage = () => {
             <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
                 {/* Left Section */}
-                <div className="py-8 lg:py-12 w-full flex flex-col items-start text-left space-y-12">
+                <div className="py-8 lg:py-12 w-full flex flex-col items-start text-left space-y-18">
 
                     {/* Quote Icon */}
                     <div className="w-14 h-14 relative">
@@ -75,20 +75,6 @@ const CEOsMessage = () => {
                         <h3 className="font-medium text-white">{ceosMessage.name}</h3>
                         <p className="text-white/70">{ceosMessage.designation}</p>
                     </div>
-                </div>
-
-                {/* Right Section - Image Container */}
-                <div className="relative w-full h-full mt-[15%] overflow-hidden">
-                    <div className="absolute inset-0 z-10" /> {/* Optional Overlay */}
-                    {ceosMessage.rightSectionImage && (
-                        <Image
-                            src={ceosMessage.rightSectionImage}
-                            alt="Feature"
-                            fill
-                            className="object-cover hover:scale-105 transition-transform duration-700 ease-in-out"
-                            priority
-                        />
-                    )}
                 </div>
 
             </div>

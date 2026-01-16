@@ -17,10 +17,12 @@ const StoryTimeline = () => {
     const activeEvent = events[activeIndex] || {};
 
     // GEOMETRY CONSTANTS
-    // We make the circle very large so the curve looks shallow like the screenshot
+    // Large circle so arc looks shallow. Adjusted radii so years sit inside the visible arc.
     const CIRCLE_SIZE = 1200;
-    const RADIUS = 540; // The radius where the years sit
-    const SPACING_ANGLE = 15; // How many degrees between each year
+    const RADIUS = 420; // base radius for the arc
+    const YEAR_RADIUS = RADIUS - 60; // where years are positioned (inside the thick arc)
+    const DOT_RADIUS = RADIUS + 80; // where the clickable white dots sit (below the arc)
+    const SPACING_ANGLE = 15; // degrees between each year
 
     if (!events.length) return null;
 
@@ -43,8 +45,8 @@ const StoryTimeline = () => {
                     <div className="relative h-[650px] flex items-center overflow-visible">
 
                         {/* "Our Story" Text */}
-                        <div className="relative pl-12 md:pl-24 z-30 pointer-events-none">
-                            <h2 className="font-bold leading-[0.9]">
+                        <div className="relative pl-12 md:pl-24 z-30 py-10 pointer-events-none">
+                            <h2 className="font-bold leading-[0.9] text-left">
                                 <div className="text-[108px] text-white block">Our</div>
                                 <div className="text-[108px] text-white block">Story</div>
                             </h2>
@@ -76,21 +78,21 @@ const StoryTimeline = () => {
                                     const angleDeg = (index * SPACING_ANGLE);
                                     const angleRad = (angleDeg * Math.PI) / 180;
 
-                                    // x, y relative to the center of the CIRCLE_SIZE box
-                                    const x = (CIRCLE_SIZE / 2) + RADIUS * Math.cos(angleRad);
-                                    const y = (CIRCLE_SIZE / 2) + RADIUS * Math.sin(angleRad);
+                                    // x, y relative to the center of the CIRCLE_SIZE box (place years inside the arc)
+                                    const x = (CIRCLE_SIZE / 2) + YEAR_RADIUS * Math.cos(angleRad);
+                                    const y = (CIRCLE_SIZE / 2) + YEAR_RADIUS * Math.sin(angleRad);
 
                                     return (
                                         <div
                                             key={event.id}
                                             onClick={() => setActiveId(event.id)}
-                                            className={`absolute -translate-y-1/2 cursor-pointer transition-all duration-500 text-2xl font-medium tracking-tighter
+                                            className={`absolute cursor-pointer transition-all duration-500 text-2xl font-medium tracking-tighter -translate-x-1/2 -translate-y-1/2
                                                 ${activeId === event.id ? "text-white scale-110" : "text-white/20 hover:text-white/40"}`}
                                             style={{
                                                 left: `${x}px`,
                                                 top: `${y}px`,
-                                                // Keep years readable while rotating
-                                                transform: `translateY(-50%) rotate(${activeIndex * SPACING_ANGLE}deg)`
+                                                // counter-rotate so text stays upright as the wheel turns
+                                                transform: `rotate(${activeIndex * SPACING_ANGLE}deg)`
                                             }}
                                         >
                                             {event.year}
@@ -99,14 +101,56 @@ const StoryTimeline = () => {
                                 })}
                             </div>
 
-                            {/* Violet Marker & Line (Fixed at the center-right of the arc) */}
-                            <div className="absolute top-1/2 -translate-y-1/2 z-40 pointer-events-none"
-                                style={{ left: `${(CIRCLE_SIZE / 2) + RADIUS - 40}px` }}>
-                                <div className="flex items-center">
-                                    <div className="w-16 h-[2px] bg-purple-600/50" />
-                                    <div className="w-4 h-4 bg-purple-600 rotate-45 shadow-[0_0_20px_#9333ea] ml-4" />
-                                </div>
-                            </div>
+                            {/* Clickable White Dots (below the arc) */}
+                            {events.map((event, index) => {
+                                const angleDeg = (index * SPACING_ANGLE);
+                                const angleRad = (angleDeg * Math.PI) / 180;
+                                const dx = (CIRCLE_SIZE / 2) + DOT_RADIUS * Math.cos(angleRad);
+                                const dy = (CIRCLE_SIZE / 2) + DOT_RADIUS * Math.sin(angleRad);
+                                const isActive = activeId === event.id;
+
+                                return (
+                                    <button
+                                        key={`dot-${event.id}`}
+                                        onClick={() => setActiveId(event.id)}
+                                        className={`absolute -translate-x-1/2 -translate-y-1/2 z-40 rounded-full transition-all duration-300 ${isActive ? 'w-5 h-5 bg-white shadow-lg' : 'w-3 h-3 bg-white/60 hover:bg-white'}`}
+                                        style={{ left: `${dx}px`, top: `${dy}px` }}
+                                        aria-label={`Select ${event.year}`}
+                                    />
+                                );
+                            })}
+
+                            {/* Violet Marker & Line at active year (on the arc) */}
+                            {(() => {
+                                const aDeg = activeIndex * SPACING_ANGLE;
+                                const aRad = (aDeg * Math.PI) / 180;
+                                const mx = (CIRCLE_SIZE / 2) + (RADIUS - 10) * Math.cos(aRad);
+                                const my = (CIRCLE_SIZE / 2) + (RADIUS - 10) * Math.sin(aRad);
+                                return (
+                                    <div
+                                        className="absolute z-50 pointer-events-none"
+                                        style={{ left: `${mx}px`, top: `${my}px`, transform: 'translate(-50%,-50%)' }}
+                                    >
+                                        <div style={{ transform: `rotate(${aDeg}deg)` }} className="flex items-center -translate-y-1/2">
+                                            <div className="w-10 h-[3px] bg-violet-600/80 rounded" />
+                                            <div className="w-4 h-4 bg-violet-600 rounded-full ml-3 shadow-[0_0_14px_#7c3aed]" />
+                                        </div>
+                                    </div>
+                                );
+                            })()}
+
+                            {/* Active white dot on the arc (on top) */}
+                            {(() => {
+                                const aDeg = activeIndex * SPACING_ANGLE;
+                                const aRad = (aDeg * Math.PI) / 180;
+                                const ax = (CIRCLE_SIZE / 2) + (YEAR_RADIUS) * Math.cos(aRad);
+                                const ay = (CIRCLE_SIZE / 2) + (YEAR_RADIUS) * Math.sin(aRad);
+                                return (
+                                    <div className="absolute z-50 pointer-events-none" style={{ left: `${ax}px`, top: `${ay}px`, transform: 'translate(-50%,-50%)' }}>
+                                        <div className="w-3 h-3 bg-white rounded-full shadow-md" />
+                                    </div>
+                                );
+                            })()}
 
                         </div>
                     </div>
