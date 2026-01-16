@@ -81,38 +81,40 @@ const DemoDetails = () => {
                     </button>
                 </div>
 
-                {/* Video Preview Section */}
-                <div className="relative w-full h-[399px] mx-auto rounded-2xl overflow-hidden mb-8">
-                    {/* Video Element */}
-                    <video
-                        id="demo-video"
-                        className="w-full h-full object-cover"
-                        controls={isPlaying}
-                        poster={demoDetails.videoPoster}
-                    >
-                        <source src={demoDetails.videoSrc} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-
-                    {/* Play Button Overlay - Hidden when playing */}
-                    {!isPlaying && (
-                        <div
-                            className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/10 hover:bg-black/20 transition-colors"
-                            onClick={handlePlayClick}
+                {/* Video Preview Section (centered, responsive, full-width up to max) */}
+                <div className="w-full mx-auto mb-8 flex justify-center">
+                    <div className="relative w-full max-w-[1200px] rounded-2xl overflow-hidden">
+                        {/* Video Element - show poster as preview and controls */}
+                        <video
+                            id="demo-video"
+                            className="w-full aspect-video object-cover"
+                            controls
+                            poster={demoDetails.videoPoster}
                         >
-                            <div className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    className="text-gray-800 ml-1"
-                                >
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
+                            <source src={demoDetails.videoSrc} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+
+                        {/* Play Button Overlay - optional, clicks will autoplay when present */}
+                        {!isPlaying && (
+                            <div
+                                className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/10 hover:bg-black/20 transition-colors"
+                                onClick={handlePlayClick}
+                            >
+                                <div className="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        className="text-gray-800 ml-1"
+                                    >
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                    )}
+                        )}
+                    </div>
                 </div>
 
                 {/* Description Section */}
