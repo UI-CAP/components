@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import data from "@/data/home-page/data.json";
 import { AnimatePresence } from 'framer-motion';
+import CTAButton from "@/component/shared/CTAButton";
 
 const MenuBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -81,12 +82,25 @@ const MenuBar = () => {
 
       {/* Right: Buttons */}
       <div className="flex items-center gap-4">
-        <button className="px-8 py-4 cursor-pointer text-black border border-black rounded-full button">
-          Talk to Us
-        </button>
-        <button className="px-8 py-4 cursor-pointer text-white bg-[#DF4364] rounded-full button">
-          Book A Demo
-        </button>
+        {data.menu.ctas && data.menu.ctas.map((cta, index) => (
+          <CTAButton
+            key={index}
+            label={cta.label}
+            href={cta.link}
+            bg={cta.bg}
+            textColor={cta.textColor}
+            hoverBg={cta.hoverBg}
+            hoverTextColor={cta.hoverTextColor}
+            icon={cta.icon}
+            hoverIcon={cta.hoverIcon}
+            iconSize={36}
+            borderColor={cta.bg === 'transparent' ? '#000000' : 'transparent'}
+            hoverBorderColor={cta.hoverBg}
+            target={cta.target}
+            variant={cta.bg === 'transparent' ? 'secondary' : 'primary'}
+            className="px-8 py-4"
+          />
+        ))}
       </div>
 
 
@@ -198,10 +212,16 @@ const MenuBar = () => {
                             <p className="text-white/80">
                               {banner.description}
                             </p>
-                            <button className="bg-white hover:bg-gray-100 button text-black font-medium px-4 py-3 rounded-full flex items-center gap-2 w-fit transition-all group">
-                              {banner.ctaText}
-                              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                            </button>
+                            {banner.cta && (
+                              <CTAButton
+                                label={banner.cta.label}
+                                href={banner.cta.link}
+                                bg={banner.cta.bg}
+                                textColor={banner.cta.textColor}
+                                hoverBg={banner.cta.hoverBg}
+                                hoverTextColor={banner.cta.hoverTextColor}
+                              />
+                            )}
                           </div>
                           {/* Robot/AI Image */}
                           <div className="absolute bottom-3 flex items-center justify-center w-36 h-36">

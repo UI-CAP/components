@@ -3,13 +3,19 @@
 import { useState } from "react";
 import Image from "next/image";
 import data from "@/data/home-page/data.json";
+import CTAButton from "@/component/shared/CTAButton";
 
 export default function BannerSection({
   name = data.banner.title,
   subtitle = data.banner.subtitle,
+  ctas = data.banner.ctas || [],
   profileImage,
   bannerImages
 }) {
+  const primaryCta = ctas[0] || {};
+  const secondaryCta = ctas[1] || {};
+  const ctaText = primaryCta.label || 'Start Your AI Journey Today';
+  const secondaryCtaText = secondaryCta.label || 'Talk to Us';
   // Use centralized default images if no props provided
   const defaultImages = data.banner.images;
 
@@ -67,43 +73,56 @@ export default function BannerSection({
 
         {/* Text Content */}
         <div className="w-full lg:max-w-3xl z-10">
-          <h1 className="text-white mb-6">
+          <h1 className="text-white">
             Let&rsquo;s AI Your <br /> Business.
           </h1>
-          <p className="text-white my-6 max-w-xl">
+          <p className="text-white mt-8 mb-14 max-w-xl">
             {subtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button
-              className="group flex items-center gap-2 p-6 rounded-full cursor-pointer transition-all duration-300 bg-white text-black border border-transparent button group-hover:bg-[#F22E62] group-hover:text-white"
-            >
-              Start Your AI Journey Today
-              <span className="flex items-center justify-center transform transition-transform duration-300 group-hover:rotate-45">
-                <Image src="/assets/icon/grayBtn.png" alt="arrow" width={36} height={36} />
-              </span>
-            </button>
-            <button
-              className="group flex items-center gap-2 p-6 rounded-full transition-all duration-300 border border-white text-white hover:bg-white hover:text-black transition-colors button bg-transparent group-hover:bg-[#F22E62] group-hover:text-white"
-            >
-              Talk to Us
-              <span className="bg-[#F22E62] text-white rounded-full p-1 transition-colors transform transition-transform duration-300 group-hover:rotate-45 flex items-center justify-center">
-          <Image src="/assets/icon/redBtn.png" alt="arrow" width={32} height={32} /> 
-               </span>
-            </button>
+            <CTAButton
+              label={ctaText}
+              href={primaryCta.link || "#"}
+              bg={primaryCta.bg || "#FFFFFF"}
+              textColor={primaryCta.textColor || "#000000"}
+              hoverBg={primaryCta.hoverBg || "#F22E62"}
+              hoverTextColor={primaryCta.hoverTextColor || "#FFFFFF"}
+              icon={primaryCta.icon || "/assets/icon/grayBtn.png"}
+              hoverIcon={primaryCta.hoverIcon || "/assets/icon/whiteBtn.png"}
+              iconSize={44}
+              target={primaryCta.target}
+              variant="primary"
+            />
+
+            <CTAButton
+              label={secondaryCtaText}
+              href={secondaryCta.link || "#"}
+              bg={secondaryCta.bg || "transparent"}
+              textColor={secondaryCta.textColor || "#FFFFFF"}
+              hoverBg={secondaryCta.hoverBg || "#F22E62"}
+              hoverTextColor={secondaryCta.hoverTextColor || "#FFFFFF"}
+              icon={secondaryCta.icon || "/assets/icon/redBtn.png"}
+              hoverIcon={secondaryCta.hoverIcon || "/assets/icon/whiteBtn.png"}
+              iconSize={40}
+              borderColor="#FFFFFF"
+              hoverBorderColor="#F22E62"
+              target={secondaryCta.target}
+              variant="secondary"
+            />
           </div>
         </div>
 
         {/* Previews - Positioned at bottom right on large screens, centered on small */}
         {images.length > 1 && (
-          <div className="absolute bottom-4 md:bottom-10 w-full left-4 md:left-2/3 flex gap-2 md:gap-4 z-50 justify-start md:justify-start">
+          <div className="absolute bottom-56 w-full left-4 md:left-2/3 items-center flex gap-2 md:gap-4 z-50 justify-start md:justify-start">
             {images.map((imgSrc, index) => (
               <div
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
                 className={`relative overflow-hidden cursor-pointer transition-all p-0.5 duration-300 border-2 ${index === currentImageIndex
-                  ? "border-white w-26 h-13 scale-110 shadow-lg"
-                  : "border-none w-24 h-12 hover:scale-105"
+                  ? "border-white w-32 h-16 scale-110 shadow-lg"
+                  : "border-none w-28 h-14 hover:scale-105"
                   }`}
               >
                 {isVideo(imgSrc) ? (
@@ -128,7 +147,6 @@ export default function BannerSection({
         )}
       </div>
 
-      {/* Trusted Partners moved to separate component: TrustedPartners.js */}
     </div>
   );
 }

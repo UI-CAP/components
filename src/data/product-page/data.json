@@ -156,5 +156,16 @@
                 "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             }
         ]
+    },
+    "cta": {
+        "label": "Explore Product Features",
+        "link": "/products",
+        "bg": "#383E5B",
+        "textColor": "#FFFFFF",
+        "hoverBg": "#F22E62",
+        "hoverTextColor": "#FFFFFF",
+        "icon": "/assets/icon/grayBtn.png",
+        "hoverIcon": "/assets/icon/whiteBtn.png",
+        "target": "_self"
     }
 }

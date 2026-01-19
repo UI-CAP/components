@@ -162,10 +162,6 @@ body {
     /* gray-400 */
   }
 
-  button {
-    font-size: 20px;
-  }
-
   /* Media Queries for Responsive Scaling */
   @media (min-width: 640px) {
     h1 {
@@ -238,10 +234,6 @@ body {
       font-size: 13px;
     }
 
-    button {
-      font-size: 15px;
-    }
-
     h7 {
       font-size: 13px;
     }
@@ -282,10 +274,6 @@ body {
 
     span {
       font-size: 13px;
-    }
-
-    button {
-      font-size: 20px;
     }
   }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { BsArrowUpRight, BsDownload } from 'react-icons/bs';
 import data from "@/data/home-page/data.json";
+import CTAButton from "@/component/shared/CTAButton";
 
 const StatsSection = () => {
     const stats = data.stats.items;
@@ -49,19 +49,24 @@ const StatsSection = () => {
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                            <button
-                                className="flex items-center gap-2 p-6 button border-1 border-white text-white rounded-full hover:bg-white hover:text-[#292F44] transition-colors duration-200"
-                            >
-                                About Us
-                                <BsArrowUpRight size={16} />
-                            </button>
-
-                            <button
-                                className="flex items-center text-black bg-white gap-2 button p-6 bg-[#292F44] rounded-full"
-                            >
-                                Download Brochure
-                                <BsDownload size={16} />
-                            </button>
+                            {data.stats.ctas && data.stats.ctas.map((cta, index) => (
+                                <CTAButton
+                                    key={index}
+                                    label={cta.label}
+                                    href={cta.link}
+                                    bg={cta.bg}
+                                    textColor={cta.textColor}
+                                    hoverBg={cta.hoverBg}
+                                    hoverTextColor={cta.hoverTextColor}
+                                    icon={cta.icon}
+                                    hoverIcon={cta.hoverIcon}
+                                    iconSize={44}
+                                    borderColor={cta.bg === 'transparent' ? '#FFFFFF' : 'transparent'}
+                                    hoverBorderColor={cta.hoverBg}
+                                    target={cta.target}
+                                    variant={cta.bg === 'transparent' ? 'secondary' : 'primary'}
+                                />
+                            ))}
                         </div>
                     </div>
 

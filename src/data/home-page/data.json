@@ -22,6 +22,30 @@
                 "hasDropdown": true
             }
         ],
+        "ctas": [
+            {
+                "label": "Talk to Us",
+                "link": "/contact",
+                "bg": "transparent",
+                "textColor": "#000000",
+                "hoverBg": "#F22E62",
+                "hoverTextColor": "#FFFFFF",
+                "icon": "/assets/icon/grayBtn.png",
+                "hoverIcon": "/assets/icon/whiteBtn.png",
+                "target": "_self"
+            },
+            {
+                "label": "Book A Demo",
+                "link": "/demo",
+                "bg": "#DF4364",
+                "textColor": "#FFFFFF",
+                "hoverBg": "#000000",
+                "hoverTextColor": "#FFFFFF",
+                "icon": "/assets/icon/whiteBtn.png",
+                "hoverIcon": "/assets/icon/whiteBtn.png",
+                "target": "_self"
+            }
+        ],
         "logo": {
             "src": "/assets/logo/menu.png",
             "alt": "Vishleshan Logo",
@@ -70,6 +94,14 @@
                     "title": "Start your Agentic AI journey with Vishleshan.ai today.",
                     "description": "Get on a quick call with our experts",
                     "ctaText": "Try A Free Demo",
+                    "cta": {
+                        "label": "Try A Free Demo",
+                        "link": "/demo",
+                        "bg": "#FFFFFF",
+                        "textColor": "#000000",
+                        "hoverBg": "#F6F6F6",
+                        "hoverTextColor": "#000000"
+                    },
                     "image": "/assets/image/robot.jpg"
                 },
                 "rightSection": {
@@ -328,6 +360,30 @@
     "banner": {
         "title": "Let's AI Your Business",
         "subtitle": "We build enterprise-grade AI solutions that make intelligence usable, scalable, and business-ready.",
+        "ctas": [
+            {
+                "label": "Start Your AI Journey Today",
+                "link": "/demo",
+                "bg": "#FFFFFF",
+                "textColor": "#000000",
+                "hoverBg": "#F22E62",
+                "hoverTextColor": "#FFFFFF",
+                "icon": "/assets/icon/grayBtn.png",
+                "hoverIcon": "/assets/icon/whiteBtn.png",
+                "target": "_self"
+            },
+            {
+                "label": "Talk to Us",
+                "link": "/contact",
+                "bg": "transparent",
+                "textColor": "#FFFFFF",
+                "hoverBg": "#F22E62",
+                "hoverTextColor": "#FFFFFF",
+                "icon": "/assets/icon/redBtn.png",
+                "hoverIcon": "/assets/icon/whiteBtn.png",
+                "target": "_self"
+            }
+        ],
         "images": [
             "/assets/video/banner.mp4",
             "/assets/video/banner1.mp4",
@@ -450,7 +506,7 @@
             "Smart Search And Discovery": {
                 "title": "Smart Search and Discovery",
                 "description": "Easily customize and deploy AI solutions tailored to automate, optimize, and adapt to any task or business workflow.",
-                "image": "/assets/image/AI-powred.mp4"
+                "image": "/assets/video/AI-powred.mp4"
             },
             "Conversational": {
                 "title": "Conversational AI",
@@ -468,11 +524,48 @@
                 "image": "/assets/video/AI-powred.mp4"
             }
         }
+        ,
+        "cta": {
+            "label": "Explore More",
+            
+            "link": "/explore",
+            "bg": "#383E5B",
+            "textColor": "#FFFFFF",
+            "hoverBg": "#F22E62",
+            "hoverTextColor": "#FFFFFF",
+            "icon": "/assets/icon/whiteBtn.png",
+            "hoverIcon": "/assets/icon/whiteBtn.png",
+            "target": "_self"
+        }
     },
     "stats": {
         "title": "No AI Hype Here. Just Results.",
         "description": "Vishleshan provides an end-to-end AI platform for enterprises. From DataFlow to Aether, we offer a toolchain that enables businesses to build and deploy AI solutions across industries.",
         "image": "/assets/image/stats.png",
+        "ctas": [
+            {
+                "label": "About Us",
+                "link": "/about",
+                "bg": "transparent",
+                "textColor": "#FFFFFF",
+                "hoverBg": "#FFFFFF",
+                "hoverTextColor": "#292F44",
+                "icon": "/assets/icon/whiteBtn.png",
+                "hoverIcon": "/assets/icon/grayBtn.png",
+                "target": "_self"
+            },
+            {
+                "label": "Download Brochure",
+                "link": "/brochure.pdf",
+                "bg": "#FFFFFF",
+                "textColor": "#000000",
+                "hoverBg": "#F22E62",
+                "hoverTextColor": "#FFFFFF",
+                "icon": "/assets/icon/grayBtn-down.png",
+                "hoverIcon": "/assets/icon/grayBtn-down.png",
+                "target": "_blank"
+            }
+        ],
         "items": [
             {
                 "value": "500+",
@@ -491,70 +584,6 @@
                 "description": "Lorem Ipsum"
             }
         ]
-    },
-    "footer": {
-        "image": "/assets/logo/white.png",
-        "video": "/assets/video/footer.mp4",
-        "description": "Vishleshan' in Sanskrit means analysis and synthesis, involving the examination and breakdown of something to understand its components.",
-        "links": {
-            "company": [
-                {
-                    "label": "About Us",
-                    "href": "#"
-                },
-                {
-                    "label": "Privacy",
-                    "href": "#"
-                }
-            ],
-            "investmentStrategies": [
-                {
-                    "label": "Product",
-                    "href": "#"
-                },
-                {
-                    "label": "Blog",
-                    "href": "#"
-                },
-                {
-                    "label": "Enterprise",
-                    "href": "#"
-                }
-            ],
-            "resources": [
-                {
-                    "label": "Financial",
-                    "href": "#"
-                },
-                {
-                    "label": "Healthcare",
-                    "href": "#"
-                },
-                {
-                    "label": "Enterprise",
-                    "href": "#"
-                },
-                {
-                    "label": "Cloud + Tech AI",
-                    "href": "#"
-                }
-            ],
-            "platform": [
-                {
-                    "label": "Contacts",
-                    "href": "#"
-                },
-                {
-                    "label": "Login / Registration",
-                    "href": "#"
-                }
-            ]
-        },
-        "copyright": "©2025 Vishleshan.ai • All rights reserved.",
-        "disclaimer": {
-            "important": "This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Past performance is not indicative of future results. Investment and other forward-looking statements are subject to risks and uncertainties. Please refer to our Form ADV Part 2 brochure and other regulatory filings available upon request.",
-            "additional": "For more information about our investment strategies, fees, and risks, please refer to our Form ADV Part 2 brochure and other regulatory filings available upon request."
-        }
     },
     "useCases": {
         "title": "Use Cases",
@@ -716,17 +745,93 @@
         "description": "Get on a quick call with our experts",
         "image": "",
         "secondaryImage": "/assets/image/robot.jpg",
-        "cta": [
+        "ctas": [
             {
-                "title": "Try A Free Demo",
-                "variant": "primary",
-                "link": "#"
+                "label": "Try A Free Demo",
+                "link": "/demo",
+                "bg": "#FFFFFF",
+                "textColor": "#252A41",
+                "hoverBg": "#F22E62",
+                "hoverTextColor": "#FFFFFF",
+                "icon": "/assets/icon/grayBtn.png",
+                "hoverIcon": "/assets/icon/whiteBtn.png",
+                "target": "_self"
             },
             {
-                "title": "Talk To Sales",
-                "variant": "outline",
-                "link": "#"
+                "label": "Talk To Sales",
+                "link": "/contact",
+                "bg": "transparent",
+                "textColor": "#FFFFFF",
+                "hoverBg": "#FFFFFF",
+                "hoverTextColor": "#252A41",
+                "icon": "/assets/icon/whiteBtn.png",
+                "hoverIcon": "/assets/icon/grayBtn.png",
+                "target": "_self"
             }
         ]
+    },
+        "footer": {
+        "image": "/assets/logo/white.png",
+        "video": "/assets/video/footer.mp4",
+        "description": "Vishleshan' in Sanskrit means analysis and synthesis, involving the examination and breakdown of something to understand its components.",
+        "links": {
+            "company": [
+                {
+                    "label": "About Us",
+                    "href": "#"
+                },
+                {
+                    "label": "Privacy",
+                    "href": "#"
+                }
+            ],
+            "investmentStrategies": [
+                {
+                    "label": "Product",
+                    "href": "#"
+                },
+                {
+                    "label": "Blog",
+                    "href": "#"
+                },
+                {
+                    "label": "Enterprise",
+                    "href": "#"
+                }
+            ],
+            "resources": [
+                {
+                    "label": "Financial",
+                    "href": "#"
+                },
+                {
+                    "label": "Healthcare",
+                    "href": "#"
+                },
+                {
+                    "label": "Enterprise",
+                    "href": "#"
+                },
+                {
+                    "label": "Cloud + Tech AI",
+                    "href": "#"
+                }
+            ],
+            "platform": [
+                {
+                    "label": "Contacts",
+                    "href": "#"
+                },
+                {
+                    "label": "Login / Registration",
+                    "href": "#"
+                }
+            ]
+        },
+        "copyright": "©2025 Vishleshan.ai • All rights reserved.",
+        "disclaimer": {
+            "important": "This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Past performance is not indicative of future results. Investment and other forward-looking statements are subject to risks and uncertainties. Please refer to our Form ADV Part 2 brochure and other regulatory filings available upon request.",
+            "additional": "For more information about our investment strategies, fees, and risks, please refer to our Form ADV Part 2 brochure and other regulatory filings available upon request."
+        }
     }
 }
