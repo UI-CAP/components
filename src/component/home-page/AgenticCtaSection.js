@@ -20,12 +20,10 @@ const AgenticCtaSection = () => {
   const bgImage = ctaData.image || ctaData.video || null;
   const bgType = isVideo(bgImage) ? "video" : bgImage ? "image" : "color";
 
-  // Right section asset (image/video)
-  const secondaryImage = ctaData.secondaryImage || ctaData.secondaryVideo || null;
-  const secondaryType = isVideo(secondaryImage) ? "video" : secondaryImage ? "image" : "none";
+  // No separate right-side media: only main background (image/video) is used
 
   return (
-    <section className={`relative rounded-[40px] overflow-hidden h-[49.2vh] min-h-[49.2vh] my-10 mx-auto max-w-[1800px] w-[95%] flex items-center justify-center shadow-lg ${bgType === "color" ? "bg-[#252A41]" : ""}`}>
+    <section className={`relative rounded-[40px] overflow-hidden h-[49.2vh] min-h-[49.2vh] my-10 flex items-center mx-[2%] md:mx-[4%] lg:mx-[7%] justify-start shadow-lg ${bgType === "color" ? "bg-[#252A41]" : ""}`}>
       {/* Main BG */}
       {bgType === "video" && (
         <video
@@ -48,9 +46,9 @@ const AgenticCtaSection = () => {
       )}
 
         {/* Content */}
-      <div className="relative z-10 w-full flex flex-row items-center justify-between px-[4vw] py-12 gap-8">
-        {/* Left Section */}
-        <div className="flex-1 min-w-[260px] max-w-[600px] text-white text-left flex flex-col items-start justify-center gap-6">
+      <div className="relative z-10 w-full flex items-center justify-start px-[4vw] py-12">
+        {/* Left-aligned Content */}
+        <div className="w-full max-w-[600px] text-white text-left flex flex-col pl-16 items-start justify-center gap-6">
           <h2
             className="text-[2.4rem] font-bold leading-tight m-0 text-white tracking-tight text-left"
             dangerouslySetInnerHTML={{ __html: ctaData.title }}
@@ -78,30 +76,6 @@ const AgenticCtaSection = () => {
               />
             ))}
           </div>
-        </div>
-
-        {/* Right Section (Image/Video) */}
-        <div className="flex-1 min-w-[260px] flex items-center justify-center relative h-80">
-          {secondaryType === "video" && (
-            <video
-              src={secondaryImage}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-contain rounded-3xl bg-[#181B2B]"
-            />
-          )}
-          {secondaryType === "image" && (
-            <Image
-              src={secondaryImage}
-              alt="Visual"
-              width={400}
-              height={320}
-              className="object-contain rounded-3xl bg-[#181B2B]"
-              priority
-            />
-          )}
         </div>
       </div>
     </section>

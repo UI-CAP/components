@@ -2,7 +2,6 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import data from "@/data/home-page/data.json";
 
 const SuccessStoriesSection = () => {
@@ -19,8 +18,8 @@ const SuccessStoriesSection = () => {
 
   return (
     <section
-      className="w-full py-16 md:py-24 lg:py-32 relative overflow-hidden"
-      style={{ minHeight: "80.7vh" }}
+      className="w-full py-16 md:py-20 lg:py-24 relative overflow-hidden"
+      style={{ minHeight: "84.7vh" }}
     >
       {/* Background Media or Gradient Fallback */}
       {backgroundMedia ? (
@@ -55,10 +54,12 @@ const SuccessStoriesSection = () => {
       <div className="relative z-10">
         {/* Header Section */}
         <div className="mb-8 px-[7%]">
-          <h2 className="text-white mb-4 md:mb-6">{title}</h2>
-          <p className="text-gray-300 max-w-2xl leading-relaxed">
-            {description}
-          </p>
+          <div className="max-w-2xl text-left">
+            <h2 className="text-white mb-4 md:mb-6 text-left">{title}</h2>
+            <p className="text-gray-300 leading-relaxed pr-6 text-left">
+              {description}
+            </p>
+          </div>
         </div>
 
         {/* Scrollable Stories Grid */}
@@ -92,7 +93,14 @@ const StoryCard = ({ story }) => {
           <span className="text-gray-400 mb-3 block">{story.subtitle}</span>
           <div className="flex items-end justify-between gap-3 border-b border-white py-2">
             <p className="text-white leading-tight flex-1">{story.title}</p>
-            <ArrowUpRight className="text-[#F22E62] flex-shrink-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 w-5 h-5" />
+            <div className="relative w-5 h-5 flex-shrink-0">
+              <Image
+                src="/assets/icon/redArr.png"
+                alt="arrow"
+                fill
+                className="object-contain duration-300"
+              />
+            </div>
           </div>
         </div>
 

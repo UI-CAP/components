@@ -730,8 +730,32 @@
                 "image": "/assets/image/test.jpg",
                 "link": "#"
             },
-            {
+                        {
                 "id": 6,
+                "category": "Case Study",
+                "title": "Geo-Social Platform for Drivers Everywhere",
+                "description": "Its simple design helps drivers quickly grasp the product's key features.",
+                "image": "/assets/image/test.jpg",
+                "link": "#"
+            },
+            {
+                "id": 7,
+                "category": "Blog",
+                "title": "Understanding AI in Modern Transportation",
+                "description": "By being simple yet precise, the title avoids unnecessary jargon and makes it easy.",
+                "image": "/assets/image/test.jpg",
+                "link": "#"
+            },
+            {
+                "id": 8,
+                "category": "News",
+                "title": "Latest Trends in AI Technology",
+                "description": "It's intuitive design ensures users quickly understand the product's core benefits.",
+                "image": "/assets/image/test.jpg",
+                "link": "#"
+            },
+                        {
+                "id": 8,
                 "category": "News",
                 "title": "Latest Trends in AI Technology",
                 "description": "It's intuitive design ensures users quickly understand the product's core benefits.",
@@ -743,8 +767,7 @@
     "agenticCta": {
         "title": "Start your Agentic AI journey with Vishleshan.ai today.",
         "description": "Get on a quick call with our experts",
-        "image": "",
-        "secondaryImage": "/assets/image/robot.jpg",
+        "image": "/assets/image/robot.jpg",
         "ctas": [
             {
                 "label": "Try A Free Demo",
