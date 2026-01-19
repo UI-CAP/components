@@ -54,25 +54,19 @@ const VishleshanWaySection = () => {
                                     {/* Inner dark circle */}
                                     <div className="w-full h-full bg-black rounded-full flex flex-col items-center justify-center relative overflow-hidden">
                                         
-                                        {/* Violet shadow rotating clockwise */}
-                                        <div 
-                                            className="absolute inset-0 rounded-full animate-spin-slow"
-                                            style={{
-                                                background: 'radial-gradient(ellipse 40% 100% at 95% 50%, rgba(139, 92, 246, 0.8) 0%, rgba(139, 92, 246, 0.5) 30%, transparent 60%)'
-                                            }}
-                                        ></div>
+                                        {/* Removed violet shadow overlay as requested */}
                                         
                                         {/* Content */}
                                         <div className="relative z-10 flex flex-col items-center justify-center">
                                             <p className="text-gray-300 mb-2 font-medium">
                                                 {stat.name}
                                             </p>
-                                            <h3 className="font-bold text-white mb-2">
+                                            <div className="font-bold text-[70px] text-white mb-2">
                                                 {stat.value}
-                                            </h3>
-                                            <p className="text-gray-200 font-medium">
+                                            </div>
+                                            <h4 className="text-gray-200 font-medium">
                                                 {stat.description}
-                                            </p>
+                                            </h4>
                                         </div>
                                 </div>
                             </div>

@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
                         <button
                             key={index}
                             onClick={() => scrollToCard(index)}
-                            className={`h-2 rounded-full transition-all duration-300 ${
+                            className={`h-2 rounded-full transition-all cursor-pointer duration-300 ${
                                 index === activeIndex
                                     ? 'w-8 bg-[#F22E62]'
                                     : 'w-2 bg-gray-300'
@@ -118,13 +118,13 @@ const TestimonialCard = ({ review }) => {
                         
                         {/* Always show Play Button in center */}
                         <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center cursor-pointer">
+                            <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center cursor-pointer">
                                 <Image 
                                     src="/assets/icon/play.png" 
                                     alt="Play" 
-                                    width={28} 
-                                    height={28}
-                                    className="ml-1"
+                                    width={48} 
+                                    height={48}
+                                    className="ml-1 filter blur-md opacity-80"
                                 />
                             </div>
                         </div>
