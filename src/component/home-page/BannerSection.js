@@ -6,12 +6,16 @@ import data from "@/data/home-page/data.json";
 import CTAButton from "@/component/shared/CTAButton";
 
 export default function BannerSection({
-  name = data.banner.title,
   subtitle = data.banner.subtitle,
   ctas = data.banner.ctas || [],
   profileImage,
   bannerImages
 }) {
+  const title = data.banner.title;
+  const dotColor = data.banner.dotColor || '#F22E62';
+  const _titleTrim = (title || '').toString().trim();
+  const _titleEndsWithDot = _titleTrim.endsWith('.');
+  const titleText = _titleEndsWithDot ? _titleTrim.slice(0, -1) : _titleTrim;
   const primaryCta = ctas[0] || {};
   const secondaryCta = ctas[1] || {};
   const ctaText = primaryCta.label || 'Start Your AI Journey Today';
@@ -51,7 +55,7 @@ export default function BannerSection({
       ) : (
         <Image
           src={images[currentImageIndex]}
-          alt={name || "Banner Background"}
+          alt={title || "Banner Background"}
           fill
           className="absolute inset-0 w-full h-full object-contain z-0"
           priority
@@ -74,7 +78,12 @@ export default function BannerSection({
         {/* Text Content */}
         <div className="w-full lg:max-w-3xl z-10">
           <h1 className="text-white">
-            Let&rsquo;s AI Your <br /> Business.
+            {titleText}
+            <span
+              className="inline-block ml-2 w-3 h-3 rounded-full"
+              style={{ backgroundColor: dotColor }}
+              aria-hidden="true"
+            ></span>
           </h1>
           <p className="text-white mt-8 mb-14 max-w-xl">
             {subtitle}

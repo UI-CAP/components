@@ -359,6 +359,8 @@
     },
     "banner": {
         "title": "Let's AI Your Business",
+        "headingParts": ["Let's AI Your", "Business"],
+        "dotColor": "#F22E62",
         "subtitle": "We build enterprise-grade AI solutions that make intelligence usable, scalable, and business-ready.",
         "ctas": [
             {

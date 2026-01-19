@@ -117,14 +117,16 @@ const TestimonialCard = ({ review }) => {
                         />
                         
                         {/* Always show Play Button in center */}
-                        <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="absolute inset-0 flex items-center justify-center z-20">
                             <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center cursor-pointer">
-                                <Image 
-                                    src="/assets/icon/play.png" 
-                                    alt="Play" 
-                                    width={48} 
+                                <Image
+                                    src="/assets/icon/play.png"
+                                    alt="Play"
+                                    width={48}
                                     height={48}
-                                    className="ml-1 filter blur-md opacity-80"
+                                    priority
+                                    unoptimized
+                                    style={{ zIndex: 30 }}
                                 />
                             </div>
                         </div>

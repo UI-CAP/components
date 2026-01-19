@@ -51,7 +51,7 @@ const IndustryRecognition = () => {
     >
       {/* Background layer (image or video) */}
       {background && (
-        <div className="absolute bg-gray-100 inset-0 z-0 pointer-events-none">
+        <div className="absolute bg-violet-50 inset-0 z-0 pointer-events-none">
           {background.type === 'video' ? (
             <video
               src={background.src}
@@ -71,7 +71,7 @@ const IndustryRecognition = () => {
 
       <div className="relative z-10">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mt-20">
           <h2
             className="font-extrabold text-black mb-2 leading-tight"
             style={{ fontSize: 'clamp(32px, 5vw, 56px)' }}
@@ -115,25 +115,36 @@ const IndustryRecognition = () => {
         <div className="relative">
           {/* Timeline Line */}
           <div className="relative h-px bg-gray-300 mb-8">
+            {/* Repeating small ticks (ruler effect) placed on top of the line */}
+            <div
+              className="absolute left-0 right-0 pointer-events-none"
+              style={{
+                bottom: '100%',
+                height: '8px',
+                backgroundImage: 'repeating-linear-gradient(to right, #e6e7eb 0 1px, transparent 1px 8px)',
+                backgroundPosition: 'bottom'
+              }}
+            />
             {/* Year markers */}
             {timelineYears.map((year, index) => {
               const isSelected = years.includes(year);
               const position = ((year - recognition.timelineStart) / (recognition.timelineEnd - recognition.timelineStart)) * 100;
               
-              return (
+                return (
                 <div
                   key={year}
-                  className="absolute top-1/2 -translate-y-1/2"
-                  style={{ left: `${position}%` }}
+                  className="absolute"
+                  style={{ left: `${position}%`, bottom: '100%' }}
                 >
-                  {/* Tick mark */}
+                  {/* Tick mark (placed above the line) */}
                   <div
                     className={`w-px ${isSelected ? 'h-3 bg-gray-600' : 'h-2 bg-gray-400'}`}
+                    style={{ marginBottom: '6px' }}
                   />
                   
-                  {/* Year label */}
+                  {/* Year label (above the tick) */}
                   {index % 1 === 0 && (
-                    <span className="absolute top-4 left-1/2 -translate-x-1/2 text-xs text-gray-400 whitespace-nowrap">
+                    <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-400 whitespace-nowrap">
                       {year}
                     </span>
                   )}
@@ -144,10 +155,11 @@ const IndustryRecognition = () => {
             {/* Selected year indicator line (slightly below timeline) */}
             {years.includes(selectedYear) && (
               <div
-                className="absolute w-1 h-6 bg-[#F22E62] rounded-full z-10"
+                className="absolute w-1 bg-[#F22E62] rounded-full z-10"
                 style={{
                   left: `${((selectedYear - recognition.timelineStart) / (recognition.timelineEnd - recognition.timelineStart)) * 100}%`,
-                  top: 'calc(50% + 26px)',
+                  bottom: 'calc(100% + 12px)',
+                  height: '40px',
                   transform: 'translateX(-50%)'
                 }}
               />
@@ -155,7 +167,7 @@ const IndustryRecognition = () => {
           </div>
 
           {/* Year Navigation (stacked: dots above, chevrons + year pill) */}
-          <div className="absolute left-0 right-0 flex flex-col items-center z-20" style={{ top: 'calc(50% - 40px)' }}>
+          <div className="absolute left-0 right-0 flex flex-col items-center z-20" style={{ bottom: '20px' }}>
             {/* Dots (represent active award items) */}
             <div className="flex items-center gap-2 mb-3">
               {(selectedAward?.items || []).map((_, idx) => (

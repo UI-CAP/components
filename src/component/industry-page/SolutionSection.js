@@ -3,10 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import data from '@/data/industry-page/data.json';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const SolutionSection = () => {
     const { solution } = data;
     const [activeTab, setActiveTab] = useState(4); // Default to item 4 (Generative AI)
+    const [direction, setDirection] = useState(0); // 1 = next (from bottom), -1 = prev (from top)
 
     const activeSolution = solution.solutions.find(s => s.id === activeTab);
 
@@ -42,11 +44,18 @@ const SolutionSection = () => {
                             {solution.solutions.map((item) => (
                                 <button
                                     key={item.id}
-                                    onClick={() => setActiveTab(item.id)}
+                                    onClick={() => {
+                                        const currentIndex = solution.solutions.findIndex(s => s.id === activeTab);
+                                        const newIndex = solution.solutions.findIndex(s => s.id === item.id);
+                                        const dir = newIndex > currentIndex ? 1 : -1;
+                                        if (newIndex === currentIndex) return;
+                                        setDirection(dir);
+                                        setActiveTab(item.id);
+                                    }}
                                     className={`text-left flex items-start cursor-pointer border-b border-gray-300 py-2 gap-3 transition-all duration-200 ${
                                         activeTab === item.id
                                             ? 'text-[#F22E62] font-medium'
-                                            : 'text-gray-400 hover:text-gray-600'
+                                            : 'text-gray-400'
                                     }`}
                                 >
                                     <p className="font-medium">{item.number}</p>
@@ -72,46 +81,56 @@ const SolutionSection = () => {
                         </div>
                     </div>
 
-                    {/* Right Side - Content */}
+                        {/* Right Side - Content */}
                     <div className="w-full h-full p-8 rounded-3xl bg-[#F7F7FF]">
-                        <h5 className="text-black font-bold mb-6">
-                            {activeSolution?.title}
-                        </h5>
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={activeTab}
+                                custom={direction}
+                                initial={(dir) => ({ y: dir === 1 ? 40 : -40, opacity: 0 })}
+                                animate={{ y: 0, opacity: 1, transition: { duration: 0.35 } }}
+                                exit={(dir) => ({ y: dir === 1 ? -40 : 40, opacity: 0, transition: { duration: 0.35 } })}
+                            >
+                                <h5 className="text-black font-bold mb-6">
+                                    {activeSolution?.title}
+                                </h5>
 
-                        <p className="text-gray-600 mb-8 leading-relaxed">
-                            {activeSolution?.description}
-                        </p>
+                                <p className="text-gray-600 mb-8 leading-relaxed">
+                                    {activeSolution?.description}
+                                </p>
 
-                        {/* Details List */}
-                        {activeSolution?.details && activeSolution.details.length > 0 && (
-                            <ul className="list-none p-0 m-0 flex flex-col gap-5 mb-8">
-                                {activeSolution.details.map((detail, index) => (
-                                    <li
-                                        key={index}
-                                        className="text-gray-600 leading-relaxed pl-5 relative before:content-['•'] before:absolute before:left-0 before:text-[#F22E62] before:font-bold"
-                                    >
-                                        {detail.heading && (
-                                            <span className="font-semibold text-gray-800">
-                                                {detail.heading}
-                                            </span>
-                                        )}{' '}
-                                        {detail.text && (
-                                            <span className="font-normal">
-                                                {detail.text}
-                                            </span>
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
+                                {/* Details List */}
+                                {activeSolution?.details && activeSolution.details.length > 0 && (
+                                    <ul className="list-none p-0 m-0 flex flex-col gap-5 mb-8">
+                                        {activeSolution.details.map((detail, index) => (
+                                            <li
+                                                key={index}
+                                                className="text-gray-600 leading-relaxed pl-5 relative before:content-['•'] before:absolute before:left-0 before:text-[#F22E62] before:font-bold"
+                                            >
+                                                {detail.heading && (
+                                                    <span className="font-semibold text-gray-800">
+                                                        {detail.heading}
+                                                    </span>
+                                                )}{' '}
+                                                {detail.text && (
+                                                    <span className="font-normal">
+                                                        {detail.text}
+                                                    </span>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
 
-                        {/* Read More Link */}
-                        <a
-                            href="#"
-                            className="inline-block text-black font-semibold underline hover:text-[#F22E62] transition-colors"
-                        >
-                            <span>Read More</span>
-                        </a>
+                                {/* Read More Link */}
+                                <a
+                                    href="#"
+                                    className="inline-block text-black font-semibold underline hover:text-[#F22E62] transition-colors"
+                                >
+                                    <span>Read More</span>
+                                </a>
+                            </motion.div>
+                        </AnimatePresence>
                     </div>
                 </div>
             </div>

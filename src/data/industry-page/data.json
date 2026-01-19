@@ -66,7 +66,7 @@
                 "id": 2,
                 "number": "02.",
                 "title": "Personalized And Contextual Search",
-                "image": "/assets/image/solution1.jpg",
+                "image": "/assets/image/culture5.png",
                 "imageAlt": "Personalized contextual search illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
@@ -98,7 +98,7 @@
                 "id": 4,
                 "number": "04.",
                 "title": "Generative AI Search And Discovery",
-                "image": "/assets/image/solution1.jpg",
+                "image": "/assets/image/culture5.png",
                 "imageAlt": "Generative AI search and discovery illustration",
                 "description": "These systems use large language models (LLMs) to not only retrieve information but also to synthesise and generate new, coherent content based on the query.",
                 "details": [
