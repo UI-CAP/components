@@ -91,6 +91,11 @@
         "title": "Advanced Features Built For Modern Enterprises",
         "image": "/assets/image/advanceFeature.png",
         "imageAlt": "Network visualization showing contextual understanding",
+        "cards": [
+            { "id": "card-1", "color": "#3D3F5C" },
+            { "id": "card-2", "color": "#636595" },
+            { "id": "card-3", "color": "#8A8CCF" }
+        ],
         "mainFeature": {
             "title": "Contextual Understanding",
             "description": "Your AI Search Engine Doesn't Just Match Keywords — It Understands Context, Intent, And Relationships Between Terms. Using Advanced Language Models And Knowledge Graphs."
