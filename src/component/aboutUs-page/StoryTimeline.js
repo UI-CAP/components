@@ -5,7 +5,7 @@ import data from "@/data/aboutUs-page/data.json";
 
 const StoryTimeline = () => {
     const storyData = data.storyTimeline || {};
-    const { title, events = [] } = storyData;
+    const { events = [] } = storyData;
 
     // Default to the middle event or the first one
     const [activeId, setActiveId] = useState(events[2]?.id || events[0]?.id);

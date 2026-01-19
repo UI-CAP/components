@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { BsArrowUpRight } from 'react-icons/bs';
-import { BsDownload } from 'react-icons/bs';
 import data from "@/data/home-page/data.json";
+import CTAButton from "@/component/shared/CTAButton";
 
 // Utility to check if asset is video
 const isVideo = (src) => src && src.match(/\.mp4$/);
@@ -60,19 +59,23 @@ const AgenticCtaSection = () => {
             {ctaData.description}
           </p>
           <div className="flex gap-6 mt-6">
-            {ctaData.cta?.map((btn, i) => (
-              <button
+            {ctaData.ctas?.map((cta, i) => (
+              <CTAButton
                 key={i}
-                href={btn.link || "#"}
-                className={`flex items-center gap-3 px-9 py-[18px] rounded-full transition-all duration-200 no-underline cursor-pointer
-                  ${btn.variant === "primary" 
-                    ? "bg-white text-[#252A41] border-2 border-transparent shadow-sm hover:bg-[#252A41] hover:text-white hover:border-white" 
-                    : "bg-transparent text-white border-2 border-white hover:bg-white hover:text-[#252A41]"
-                  }`}
-              >
-                {btn.title}
-                {btn.title.includes("Demo") ? <BsArrowUpRight size={16} /> : <BsDownload size={16} />}
-              </button>
+                label={cta.label}
+                href={cta.link}
+                bg={cta.bg}
+                textColor={cta.textColor}
+                hoverBg={cta.hoverBg}
+                hoverTextColor={cta.hoverTextColor}
+                icon={cta.icon}
+                hoverIcon={cta.hoverIcon}
+                iconSize={44}
+                borderColor={cta.bg === 'transparent' ? '#FFFFFF' : 'transparent'}
+                hoverBorderColor={cta.hoverBg}
+                target={cta.target}
+                variant={cta.bg === 'transparent' ? 'secondary' : 'primary'}
+              />
             ))}
           </div>
         </div>

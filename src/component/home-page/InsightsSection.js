@@ -2,9 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-// Removed framer-motion for simplicity
-import { ArrowRight } from 'lucide-react';
 import data from "@/data/home-page/data.json";
+import CTAButton from '@/component/shared/CTAButton';
 
 const InsightsSection = () => {
     const [activeFilter, setActiveFilter] = useState('All');
@@ -64,17 +63,18 @@ const InsightsSection = () => {
 
                 {/* View All Button */}
                 <div className="flex justify-center">
-                    <button
-                        className="group flex items-center gap-3 p-6 bg-white border-1 border-gray-900 rounded-full button text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 shadow-lg"
-                    >
-                        View All
-                        <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-900 group-hover:bg-white flex items-center justify-center transition-colors duration-300">
-                            <ArrowRight 
-                                size={20} 
-                                className="text-white group-hover:text-gray-900 group-hover:translate-x-1 transition-all duration-300" 
-                            />
-                        </div>
-                    </button>
+                    {insightsData.viewAllCta && (
+                        <CTAButton
+                            label={insightsData.viewAllCta.label}
+                            href={insightsData.viewAllCta.link}
+                            bg={insightsData.viewAllCta.bg}
+                            textColor={insightsData.viewAllCta.textColor}
+                            hoverBg={insightsData.viewAllCta.hoverBg}
+                            hoverTextColor={insightsData.viewAllCta.hoverTextColor}
+                            borderColor={insightsData.viewAllCta.borderColor}
+                            hoverBorderColor={insightsData.viewAllCta.hoverBorderColor}
+                        />
+                    )}
                 </div>
             </div>
         </section>

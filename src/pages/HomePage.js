@@ -16,7 +16,9 @@ const HomePage = () => {
     <div className="bg-white min-h-screen">
       <MenuBar />
       <BannerSection />
-      <TrustedPartners />
+      <div className="-mt-48">
+        <TrustedPartners />
+      </div>
       <VishleshanWaySection />
       <AITransformation />
       <StatsSection />

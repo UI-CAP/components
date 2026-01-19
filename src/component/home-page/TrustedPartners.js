@@ -1,17 +1,33 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import data from "@/data/home-page/data.json";
 
 export default function TrustedPartners({ partners = data.trustedPartners }) {
   const items = partners?.items || [];
+  const [heightVh, setHeightVh] = useState("auto");
+
+  useEffect(() => {
+    function updateHeight() {
+      const vh = (189 / window.innerHeight) * 100; // convert 189px to viewport-height units
+      setHeightVh(`${vh}vh`);
+    }
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
 
   return (
-    <section className="relative z-20 py-14 rounded-t-[40px] md:rounded-t-[80px] bg-[#383E5B] lg:rounded-t-[90px] overflow-hidden backdrop-blur-[50px]">
+    <section
+      style={{ height: heightVh }}
+      className="relative z-20 py-8 rounded-t-[40px] md:rounded-t-[80px] bg-[#30354FB2] lg:rounded-t-[90px] overflow-hidden backdrop-blur-[50px]"
+    >
       <div className="mb-8">
-        <h4 className="text-gray-400 text-center font-semibold tracking-[0.2em] uppercase">
+        <h6 className="text-white opacity-60 text-center font-semibold">
           {partners.title}
-        </h4>
+        </h6>
       </div>
 
       <div className="relative w-full overflow-hidden">

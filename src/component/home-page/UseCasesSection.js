@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+// replaced ArrowUpRight icon with local redArr image
 import data from "@/data/home-page/data.json";
 
 const UseCasesSection = () => {
@@ -56,16 +56,31 @@ const UseCasesSection = () => {
                     {items.map((tag, index) => (
                         <div
                             key={`${tag}-${index}`}
-                            className="group hover:scale-105 transition-transform duration-300"
+                            className="group transition-all duration-300"
                         >
-                            <div className="flex items-center gap-2 bg-[#383E5B] text-white px-4 md:px-6 py-2.5 md:py-3 rounded-full cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg">
+                            <div className="flex items-center gap-2 bg-[#383E5B] text-white pl-4 pr-4 md:pl-6 md:pr-6 group-hover:pr-8 md:group-hover:pr-10 py-2.5 md:py-3 rounded-full cursor-pointer transition-all duration-300 shadow-md hover:shadow-lg group-hover:bg-[#F22E62]">
                                 <p className="whitespace-nowrap">
                                     {tag}
                                 </p>
-                                <ArrowUpRight 
-                                    size={14} 
-                                    className="text-[#F22E62] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" 
-                                />
+                                <div className="relative pl-2 w-4 h-4">
+                                    {/* small default icon stays in layout */}
+                                    <Image
+                                        src="/assets/icon/redArr.png"
+                                        alt="arrow"
+                                        fill
+                                        className="absolute inset-0 object-contain transition-opacity duration-200 opacity-100 group-hover:opacity-0"
+                                    />
+
+                                    {/* larger hover icon overlaid and centered without affecting layout */}
+                                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 opacity-0 group-hover:opacity-100 transform transition-all duration-300 pointer-events-none">
+                                        <Image
+                                            src="/assets/icon/redBtn.png"
+                                            alt="arrow-hover"
+                                            fill
+                                            className="object-contain group-hover:rotate-45 ml-4 group-hover:scale-150 origin-center"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}
