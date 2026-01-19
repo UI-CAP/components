@@ -44,19 +44,19 @@ const WhyChooseSection = () => {
                     {whyChoose.cards.map((card) => (
                         <div
                             key={card.id}
-                            className="bg-white/40 backdrop-blur-sm rounded-3xl p-6 lg:p-12 flex flex-col gap-6 shadow-sm"
+                            className="group bg-white/40 backdrop-blur-sm rounded-3xl p-6 lg:p-12 cursor-pointer flex flex-col gap-6 shadow-sm hover:bg-[#393E59] transition-all duration-300 ease-in-out"
                             style={{ width: '412px', height: '460px' }}
                         >
                             {/* Label Badge */}
                             <div className="w-fit">
-                                <span className="inline-block px-5 py-2 border border-black rounded-full font-medium">
+                                <span className="inline-block px-5 py-2 border border-black rounded-full font-medium group-hover:border-transparent group-hover:bg-[#F22E62] group-hover:text-white transition-colors duration-300 ease-in-out">
                                     {card.label}
                                 </span>
                             </div>
 
                             {/* Title */}
                             <h4
-                                className="text-black w-[60%]"
+                                className="text-black group-hover:text-white w-full mt-0 group-hover:mt-20 transition-all duration-300 ease-in-out"
                                 style={{
                                     fontWeight: 100,
                                     fontSize: '32px',
@@ -70,7 +70,7 @@ const WhyChooseSection = () => {
                             {/* Value */}
                             <div className="mt-auto">
                                 <div
-                                    className="text-black"
+                                    className="text-black group-hover:text-white transition-colors duration-300 ease-in-out"
                                     style={{
                                         fontWeight: 100,
                                         fontSize: '100px',
