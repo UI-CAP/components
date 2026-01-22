@@ -50,6 +50,18 @@
       transform: rotate(360deg);
     }
   }
+
+  @keyframes rotateIn {
+    from {
+      opacity: 0;
+      transform: perspective(800px) rotateY(-15deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: perspective(800px) rotateY(0deg);
+    }
+  }
 }
 
 :root {

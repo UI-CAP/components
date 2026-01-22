@@ -164,7 +164,7 @@
         ],
         "background": {
             "type": "image",
-            "src": "/assets/image/benefits2.png",
+            "src": "/assets/image/benefit.png",
             "alt": "Subtle background image for benefits section"
         }
     },
@@ -213,9 +213,44 @@
     "recognition": {
         "title": "Awards & Recognition",
         "subtitle": "Making A Name In The Industry",
-        "timelineStart": 2012,
+        "timelineStart": 2013,
         "timelineEnd": 2026,
         "awards": [
+            {
+                "year": 2013,
+                "items": [
+                    { "id": 1, "title": "Outstanding Industry Leadership", "description": "Recognized for outstanding leadership in 2013." },
+                    { "id": 2, "title": "Innovation in Services", "description": "Awarded for innovation in service delivery, 2013." }
+                ]
+            },
+            {
+                "year": 2014,
+                "items": [
+                    { "id": 1, "title": "Excellence in Customer Service", "description": "Award for customer service excellence, 2014." },
+                    { "id": 2, "title": "Best Regional Initiative", "description": "Recognized for regional growth initiatives, 2014." }
+                ]
+            },
+            {
+                "year": 2015,
+                "items": [
+                    { "id": 1, "title": "Top Performer Award", "description": "Top performer in market expansion, 2015." },
+                    { "id": 2, "title": "Sustainability Initiative", "description": "Honoured for sustainability efforts, 2015." }
+                ]
+            },
+            {
+                "year": 2016,
+                "items": [
+                    { "id": 1, "title": "Technology Innovation", "description": "Recognized for technology innovation, 2016." },
+                    { "id": 2, "title": "Partner Excellence", "description": "Awarded for partner network excellence, 2016." }
+                ]
+            },
+            {
+                "year": 2017,
+                "items": [
+                    { "id": 1, "title": "Service Excellence", "description": "Service excellence award, 2017." },
+                    { "id": 2, "title": "Market Leadership", "description": "Recognized for market leadership, 2017." }
+                ]
+            },
             {
                 "year": 2018,
                 "items": [
@@ -237,6 +272,16 @@
                     {
                         "id": 4,
                         "title": "Awarded as the 'Best Commodity Exchange' of the Bullion Federation of India"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Best Commodity Exchange",
+                        "description": "Honoured as the 'Best Commodity Exchange' 2018, by PHD Chamber of Commerce and Industry, September 2018"
+                    },
+                    {
+                        "id": 6,
+                        "title": "Best Commodity Exchange",
+                        "description": "Awarded the 'Best Commodity Exchange' at the India International Gold Convention, August 2018"
                     }
                 ]
             },
@@ -258,6 +303,55 @@
                         "title": "Best Exchange in Bullion",
                         "description": "Honoured with the 'Best Commodity Exchange' Award at the India International Bullion Summit, March 2019"
                     }
+                ]
+            },
+            {
+                "year": 2020,
+                "items": [
+                    { "id": 1, "title": "Resilience Award", "description": "Recognized for resilience and continuity in 2020." },
+                    { "id": 2, "title": "Digital Transformation", "description": "Awarded for digital transformation efforts, 2020." }
+                ]
+            },
+            {
+                "year": 2021,
+                "items": [
+                    { "id": 1, "title": "Customer Impact Award", "description": "Honoured for significant customer impact, 2021." },
+                    { "id": 2, "title": "Operational Excellence", "description": "Operational excellence recognition, 2021." }
+                ]
+            },
+            {
+                "year": 2022,
+                "items": [
+                    { "id": 1, "title": "Innovation Award", "description": "Innovation award for new product features, 2022." },
+                    { "id": 2, "title": "Sustainability Champion", "description": "Recognized for sustainability initiatives, 2022." }
+                ]
+            },
+            {
+                "year": 2023,
+                "items": [
+                    { "id": 1, "title": "Growth Excellence", "description": "Awarded for growth and expansion in 2023." },
+                    { "id": 2, "title": "Best Partnership", "description": "Recognized for outstanding partnerships, 2023." }
+                ]
+            },
+            {
+                "year": 2024,
+                "items": [
+                    { "id": 1, "title": "Industry Influence", "description": "Recognized for industry influence, 2024." },
+                    { "id": 2, "title": "Customer First Award", "description": "Awarded for customer-first culture, 2024." }
+                ]
+            },
+            {
+                "year": 2025,
+                "items": [
+                    { "id": 1, "title": "Product Excellence", "description": "Product excellence recognition, 2025." },
+                    { "id": 2, "title": "Best Workplace", "description": "Recognized as a best workplace, 2025." }
+                ]
+            },
+            {
+                "year": 2026,
+                "items": [
+                    { "id": 1, "title": "Future Ready Award", "description": "Award for being future-ready, 2026." },
+                    { "id": 2, "title": "Social Impact", "description": "Recognized for social impact initiatives, 2026." }
                 ]
             }
         ]
