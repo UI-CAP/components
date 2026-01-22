@@ -1,42 +1,33 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import data from "@/data/industry-page/data.json";
 
 const Benefits = () => {
   const { benefits } = data;
   const [activeTab, setActiveTab] = useState(1);
-  const [imgVh, setImgVh] = useState(0);
-
-  useEffect(() => {
-    const update = () => {
-      const vhValue = (758 / window.innerHeight) * 100;
-      setImgVh(vhValue);
-    };
-    update();
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, []);
 
   const activeContent = benefits.tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <section className="w-full py-16 md:py-20 lg:py-24 px-[2%] md:px-[4%] lg:px-[7%] bg-white relative overflow-hidden">
+    <section className="w-full h-[948px] px-[2%] md:px-[4%] lg:px-[7%] bg-white relative overflow-hidden flex items-center">
       {/* Background (image or video) */}
       {benefits.background && (
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-20">
+        <div className="absolute inset-0 z-0">
           {benefits.background.type === 'video' ? (
-            <video
-              src={benefits.background.src}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            />
+            <div className="relative w-full h-full">
+              <video
+                src={benefits.background.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
           ) : (
-            <div className="w-full h-full">
+            <div className="relative w-full h-full">
               <Image
                 src={benefits.background.src}
                 alt={benefits.background.alt || ''}
@@ -49,9 +40,9 @@ const Benefits = () => {
         </div>
       )}
       <div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 gap-12 pl-[2%] md:pl-[5%] lg:pl-[8%] items-center h-full">
           {/* Left Side - Text Content */}
-          <div className="relative flex flex-col items-start pr-[28%]">
+          <div className="relative flex flex-col pr-[3%] items-start max-w-2xl">
             {/* Vertical side tabs (desktop) */}
             <div className="hidden md:flex absolute -left-12 h-full flex-col justify-center items-center gap-1">
               {benefits.tabs.map((tab) => (
@@ -98,21 +89,6 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Right Side - Image Container */}
-          <div className="w-full flex justify-center lg:justify-end">
-            <div
-              className="relative w-full max-w-[600px]"
-              style={{ height: imgVh ? `${imgVh}vh` : undefined }}
-            >
-              <Image
-                src={benefits.image}
-                alt={benefits.imageAlt}
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>
