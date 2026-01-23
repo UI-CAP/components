@@ -48,25 +48,53 @@ const StatsSection = () => {
                             {data.stats.description}
                         </p>
 
-                        <div className="flex flex-wrap gap-4">
-                            {data.stats.ctas && data.stats.ctas.map((cta, index) => (
-                                <CTAButton
-                                    key={index}
-                                    label={cta.label}
-                                    href={cta.link}
-                                    bg={cta.bg}
-                                    textColor={cta.textColor}
-                                    hoverBg={cta.hoverBg}
-                                    hoverTextColor={cta.hoverTextColor}
-                                    icon={cta.icon}
-                                    hoverIcon={cta.hoverIcon}
-                                    iconSize={44}
-                                    borderColor={cta.bg === 'transparent' ? '#FFFFFF' : 'transparent'}
-                                    hoverBorderColor={cta.hoverBg}
-                                    target={cta.target}
-                                    variant={cta.bg === 'transparent' ? 'secondary' : 'primary'}
-                                />
-                            ))}
+                        <div className="flex flex-col sm:flex-row gap-8">
+                            {data.stats.ctas && (
+                                (() => {
+                                    const [primaryCta, secondaryCta] = data.stats.ctas;
+                                    return (
+                                        <>
+                                            {primaryCta && (
+                                                <CTAButton
+                                                    label={primaryCta.label}
+                                                    href={primaryCta.link}
+                                                    bg={primaryCta.bg}
+                                                    textColor={primaryCta.textColor}
+                                                    hoverBg={primaryCta.hoverBg}
+                                                    hoverTextColor={primaryCta.hoverTextColor}
+                                                    icon={primaryCta.icon}
+                                                    hoverIcon={primaryCta.hoverIcon}
+                                                    iconSize={44}
+                                                    iconWrapperClass="pl-8"
+                                                    borderColor={primaryCta.bg === 'transparent' ? '#FFFFFF' : 'transparent'}
+                                                    hoverBorderColor={primaryCta.hoverBg}
+                                                    target={primaryCta.target}
+                                                    variant={primaryCta.bg === 'transparent' ? 'secondary' : 'primary'}
+                                                />
+                                            )}
+
+                                            {secondaryCta && (
+                                                <CTAButton
+                                                    label={secondaryCta.label}
+                                                    href={secondaryCta.link}
+                                                    bg={secondaryCta.bg}
+                                                    textColor={secondaryCta.textColor}
+                                                    hoverBg={secondaryCta.hoverBg}
+                                                    hoverTextColor={secondaryCta.hoverTextColor}
+                                                    icon={secondaryCta.icon}
+                                                    hoverIcon={secondaryCta.hoverIcon}
+                                                    iconSize={40}
+                                                    iconWrapperClass="pl-4"
+                                                    borderColor={secondaryCta.bg === 'transparent' ? '#FFFFFF' : 'transparent'}
+                                                    hoverBorderColor={secondaryCta.hoverBg}
+                                                    target={secondaryCta.target}
+                                                    variant={secondaryCta.bg === 'transparent' ? 'secondary' : 'primary'}
+                                                />
+                                            )}
+                                        </>
+                                    );
+                                })()
+                            )}
                         </div>
                     </div>
 

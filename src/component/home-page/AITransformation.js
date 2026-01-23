@@ -140,8 +140,10 @@ const AITransformation = () => {
                 href={aiCta.link || "#"}
                 bg={aiCta.bg || "#383E5B"}
                 textColor={aiCta.textColor || "#FFFFFF"}
-                hoverBg={aiCta.hoverBg || "#F22E62"}
+                hoverBg={aiCta.hoverBg || "#FFFFFF"}
                 hoverTextColor={aiCta.hoverTextColor || "#FFFFFF"}
+                borderColor={aiCta.borderColor || "#FFFFFF"}
+                hoverBorderColor={aiCta.hoverBorderColor || "#383E5B"}
                 icon={aiCta.icon || "/assets/icon/grayBtn.png"}
                 hoverIcon={aiCta.hoverIcon || "/assets/icon/whiteBtn.png"}
                 iconSize={44}
