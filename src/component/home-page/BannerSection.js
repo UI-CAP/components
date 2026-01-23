@@ -14,7 +14,7 @@ export default function BannerSection({
   const title = data.banner.title;
   const dotColor = data.banner.dotColor || '#F22E62';
   const _titleTrim = (title || '').toString().trim();
-  const _titleEndsWithDot = _titleTrim.endsWith('.');
+  const _titleEndsWithDot = _titleTrim.endsWith('.'); 
   const titleText = _titleEndsWithDot ? _titleTrim.slice(0, -1) : _titleTrim;
   const primaryCta = ctas[0] || {};
   const secondaryCta = ctas[1] || {};
@@ -89,18 +89,21 @@ export default function BannerSection({
             {subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-8">
             <CTAButton
               label={ctaText}
               href={primaryCta.link || "#"}
               bg={primaryCta.bg || "#FFFFFF"}
               textColor={primaryCta.textColor || "#000000"}
-              hoverBg={primaryCta.hoverBg || "#F22E62"}
+              hoverBg={primaryCta.hoverBg || "#383E5B"}
               hoverTextColor={primaryCta.hoverTextColor || "#FFFFFF"}
               icon={primaryCta.icon || "/assets/icon/grayBtn.png"}
               hoverIcon={primaryCta.hoverIcon || "/assets/icon/whiteBtn.png"}
               iconSize={44}
+              iconWrapperClass="pl-8"
               target={primaryCta.target}
+              borderColor="#FFFFFF"
+              hoverBorderColor="#383E5B"
               variant="primary"
             />
 
@@ -114,6 +117,7 @@ export default function BannerSection({
               icon={secondaryCta.icon || "/assets/icon/redBtn.png"}
               hoverIcon={secondaryCta.hoverIcon || "/assets/icon/whiteBtn.png"}
               iconSize={40}
+              iconWrapperClass="pl-4"
               borderColor="#FFFFFF"
               hoverBorderColor="#F22E62"
               target={secondaryCta.target}

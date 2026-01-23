@@ -36,7 +36,9 @@ export default function CTAButton({
   hoverBorderColor = "#F22E62",
   variant = "primary",
   target,
-  className = ""
+  className = "",
+  iconWrapperClass = ""
+  , rotateOnHover
 }) {
   const [isHover, setIsHover] = useState(false);
 
@@ -62,7 +64,7 @@ export default function CTAButton({
       style={baseStyles}
     >
       <p className="font-medium">{label}</p>
-      <span className="flex items-center justify-center relative" style={{ width: `${iconSize}px`, height: `${iconSize}px` }}>
+      <span className={`flex items-center justify-center relative ${iconWrapperClass}`} style={{ width: `${iconSize}px`, height: `${iconSize}px` }}>
         <Image
           src={icon}
           alt="arrow"
@@ -75,7 +77,10 @@ export default function CTAButton({
           alt="arrow-hover"
           width={iconSize}
           height={iconSize}
-          className="absolute inset-0 m-auto transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 transform group-hover:rotate-45"
+          className={
+            "absolute inset-0 m-auto transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 transform " +
+            ( (typeof rotateOnHover === 'boolean' ? rotateOnHover : (variant !== 'secondary')) ? 'group-hover:rotate-45' : '' )
+          }
         />
       </span>
     </Link>

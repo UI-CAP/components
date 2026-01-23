@@ -368,7 +368,7 @@
                 "link": "/demo",
                 "bg": "#FFFFFF",
                 "textColor": "#000000",
-                "hoverBg": "#F22E62",
+                "hoverBg": "#383E5B",
                 "hoverTextColor": "#FFFFFF",
                 "icon": "/assets/icon/grayBtn.png",
                 "hoverIcon": "/assets/icon/whiteBtn.png",
@@ -529,14 +529,15 @@
         ,
         "cta": {
             "label": "Explore More",
-            
             "link": "/explore",
             "bg": "#383E5B",
             "textColor": "#FFFFFF",
-            "hoverBg": "#F22E62",
-            "hoverTextColor": "#FFFFFF",
+            "hoverBg": "#FFFFFF",
+            "hoverTextColor": "#383E5B",
+            "borderColor": "#FFFFFF",
+            "hoverBorderColor": "#383E5B",
             "icon": "/assets/icon/whiteBtn.png",
-            "hoverIcon": "/assets/icon/whiteBtn.png",
+            "hoverIcon": "/assets/icon/grayBtn.png",
             "target": "_self"
         }
     },
@@ -561,10 +562,10 @@
                 "link": "/brochure.pdf",
                 "bg": "#FFFFFF",
                 "textColor": "#000000",
-                "hoverBg": "#F22E62",
+                "hoverBg": "#383E5B",
                 "hoverTextColor": "#FFFFFF",
                 "icon": "/assets/icon/grayBtn-down.png",
-                "hoverIcon": "/assets/icon/grayBtn-down.png",
+                "hoverIcon": "/assets/icon/whiteBtn.png",
                 "target": "_blank"
             }
         ],
@@ -769,14 +770,14 @@
     "agenticCta": {
         "title": "Start your Agentic AI journey with Vishleshan.ai today.",
         "description": "Get on a quick call with our experts",
-        "image": "/assets/image/robot.jpg",
+        "image": "/assets/image/robot.png",
         "ctas": [
             {
                 "label": "Try A Free Demo",
                 "link": "/demo",
                 "bg": "#FFFFFF",
                 "textColor": "#252A41",
-                "hoverBg": "#F22E62",
+                "hoverBg": "#383E5B",
                 "hoverTextColor": "#FFFFFF",
                 "icon": "/assets/icon/grayBtn.png",
                 "hoverIcon": "/assets/icon/whiteBtn.png",
