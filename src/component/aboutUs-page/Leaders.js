@@ -117,7 +117,7 @@ const Leaders = () => {
                           <img
                             src="/assets/icon/youtube.png"
                             alt="YouTube"
-                            className="w-10 h-10"
+                            className="w-9 h-9"
                           />
                         </a>
                       )}
