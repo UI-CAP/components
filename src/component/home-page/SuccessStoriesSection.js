@@ -65,10 +65,10 @@ const SuccessStoriesSection = () => {
         {/* Scrollable Stories Grid */}
         <div
           ref={scrollContainerRef}
-          className="flex flex-row flex-nowrap gap-6 md:gap-8 items-end overflow-x-auto scrollbar-hide px-[7%]"
+          className="flex flex-row flex-nowrap gap-6 md:gap-8 items-start overflow-x-auto scrollbar-hide px-[7%]"
         >
           {items.map((story) => (
-            <div key={story.id} className="h-full flex-shrink-0 w-[32rem]">
+            <div key={story.id} className="h-full borde flex-shrink-0 w-[32rem]">
               <StoryCard story={story} />
             </div>
           ))}
@@ -92,7 +92,7 @@ const StoryCard = ({ story }) => {
         <div className="relative overflow-hidden bg-transparent flex flex-col pb-6 transition-all duration-300">
           <span className="text-gray-400 mb-3 block">{story.subtitle}</span>
           <div className="flex items-end justify-between gap-3 border-b border-white py-2">
-            <p className="text-white leading-tight flex-1">{story.title}</p>
+            <p className="text-white h-[6vh] items-end flex leading-tight flex-1 line-clamp-3 overflow-visible">{story.title}</p>
             <div className="relative w-5 h-5 flex-shrink-0">
               <Image
                 src="/assets/icon/redArr.png"

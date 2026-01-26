@@ -15,6 +15,12 @@ const StoryTimeline = () => {
         [events, activeId]);
 
     const activeEvent = events[activeIndex] || {};
+    
+    // Get previous and next events
+    const prevIndex = activeIndex > 0 ? activeIndex - 1 : events.length - 1;
+    const nextIndex = activeIndex < events.length - 1 ? activeIndex + 1 : 0;
+    const prevEvent = events[prevIndex] || {};
+    const nextEvent = events[nextIndex] || {};
 
     // GEOMETRY CONSTANTS
     // Large circle so arc looks shallow. Adjusted radii so years sit inside the visible arc.
@@ -24,7 +30,7 @@ const StoryTimeline = () => {
     const DOT_RADIUS = RADIUS + 160; // where the clickable white dots sit (further below the arc)
     const DOT_X_OFFSET = 80; // extra px to shift dots to the right
     const DOT_Y_OFFSET = 24; // extra px to push dots downward so they don't overlap the arc
-    const SPACING_ANGLE = 15; // degrees between each year
+    const SPACING_ANGLE = 20; // degrees between each year (increased for more gap between dots)
     const LEFT_OFFSET = 40; // px to shift markers to the right — adjust as needed
     // Simple single constant to control the violet line horizontal position.
     // Change `LINE_LEFT` to move the line left/right quickly.
@@ -81,6 +87,19 @@ const StoryTimeline = () => {
                                 style={{ transform: `rotate(${activeIndex * -SPACING_ANGLE}deg)` }}
                             >
                                 {events.map((event, index) => {
+                                    // Show 5 years: 2 before, current, 2 after
+                                    const prev2Index = activeIndex > 1 ? activeIndex - 2 : (activeIndex === 1 ? events.length - 1 : events.length - 2);
+                                    const prevIndex = activeIndex > 0 ? activeIndex - 1 : events.length - 1;
+                                    const nextIndex = activeIndex < events.length - 1 ? activeIndex + 1 : 0;
+                                    const next2Index = activeIndex < events.length - 2 ? activeIndex + 2 : (activeIndex === events.length - 2 ? 0 : 1);
+                                    
+                                    const isYearVisible = index === prev2Index || index === prevIndex || index === activeIndex || index === nextIndex || index === next2Index;
+                                    
+                                    if (!isYearVisible) return null;
+                                    
+                                    // Show only 3 dots: previous, current, next
+                                    const isDotVisible = index === prevIndex || index === activeIndex || index === nextIndex;
+
                                     // Calculate position (0 degrees is East/Right side)
                                     const angleDeg = (index * SPACING_ANGLE);
                                     const angleRad = (angleDeg * Math.PI) / 180;
@@ -111,13 +130,15 @@ const StoryTimeline = () => {
                                                 {event.year}
                                             </div>
                                             
-                                            {/* Dot */}
-                                            <button
-                                                onClick={() => setActiveId(event.id)}
-                                                className={`absolute z-40 transition-all duration-300 ${isActive ? 'w-5 h-5 bg-violet-600 shadow-lg shadow-violet-500/50' : 'w-3 h-3 bg-white/60 hover:bg-white'}`}
-                                                style={{ left: `${dx + DOT_X_OFFSET}px`, top: `${dy + DOT_Y_OFFSET}px`, transform: `translate(-50%, -50%) rotate(${activeIndex * SPACING_ANGLE}deg)` }}
-                                                aria-label={`Select ${event.year}`}
-                                            />
+                                            {/* Dot - Only show for previous, current, next */}
+                                            {isDotVisible && (
+                                                <button
+                                                    onClick={() => setActiveId(event.id)}
+                                                    className={`absolute z-40 transition-all duration-300 ${isActive ? 'w-5 h-5 bg-violet-600 shadow-lg shadow-violet-500/50' : 'w-3 h-3 bg-white/60 hover:bg-white'}`}
+                                                    style={{ left: `${dx + DOT_X_OFFSET}px`, top: `${dy + DOT_Y_OFFSET}px`, transform: `translate(-50%, -50%) rotate(${activeIndex * SPACING_ANGLE}deg)` }}
+                                                    aria-label={`Select ${event.year}`}
+                                                />
+                                            )}
                                         </React.Fragment>
                                     );
                                 })}
@@ -132,18 +153,37 @@ const StoryTimeline = () => {
                                     transform: 'translate(-50%, -50%)'
                                 }}
                             >
-                                <div className="w-26 h-[3px] bg-violet-600/80 rounded" />
+                                <div className="w-26 h-[3px] -mt-6 bg-violet-600/80 rounded" />
                             </div>
 
                         </div>
                     </div>
 
                     {/* RIGHT SECTION: Content */}
-                    <div className="px-8 lg:pr-24 lg:pl-20 z-20">
-                        <div className="max-w-md transition-all duration-1000" key={activeId} style={{ animation: 'rotateIn 1s cubic-bezier(0.16, 1, 0.3, 1)' }}>
-                            <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light animate-in fade-in slide-in-from-bottom-4 duration-700">
-                                {activeEvent.description}
-                            </p>
+                    <div className="px-8 lg:pr-24 h-full flex flex-col justify-center lg:pl-20 z-20">
+                        <div className="relative max-w-md space-y-8">
+                            
+                            {/* Previous Description - Top with low opacity */}
+                            <div className="opacity-30 transition-opacity duration-500">
+                                <p className="text-gray-400 text-sm md:text-base leading-relaxed font-light">
+                                    {prevEvent.description}
+                                </p>
+                            </div>
+                            
+                            {/* Current/Active Description - Full opacity */}
+                            <div className="transition-all duration-700" key={activeId}>
+                                <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light">
+                                    {activeEvent.description}
+                                </p>
+                            </div>
+                            
+                            {/* Next Description - Bottom with low opacity */}
+                            <div className="opacity-30 transition-opacity duration-500">
+                                <p className="text-gray-400 text-sm md:text-base leading-relaxed font-light">
+                                    {nextEvent.description}
+                                </p>
+                            </div>
+                            
                         </div>
                     </div>
 
